@@ -1,0 +1,15 @@
+Workflow ExifTool-commands
+==========================
+
+Canon EOS 600D (.cr2)
+---------------------
+
+exiftool -r -d "%Y/%Y%m%d/%Y%m%d_%H%M%S" -tagsfromfile "%f.cr2" "-FileName<D:\__\test\${DateTimeOriginal}_${FileNumber}.%le" --ext cr2 .
+exiftool -r -d "%Y/%Y%m%d/%Y%m%d_%H%M%S" "-FileName<D:\__\test\${DateTimeOriginal}_${FileNumber}.%le" -ext cr2 .
+exiftool -r -d "%Y/%Y%m%d/%Y%m%d_%H%M%S" "-FileName<${DateTimeOriginal}_${FileNumber}_${FileName}" .
+
+Common
+------
+
+exiftool -sort -G -s *.cr2
+exiftool -sort -G -FileNumber *.cr2
