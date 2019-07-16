@@ -4,6 +4,7 @@ Workflow ExifTool-commands
 Canon EOS 600D (.cr2)
 ---------------------
 
+exiftool -r -P -overwrite_original -wm cg -progress "-IPTC:ObjectName<Filename" "-XMP:Title<Filename" "-XMP:PreservedFileName<Filename" .
 -- StartSet --
 exiftool -r -d "%Y/%Y%m%d/%Y%m%d_%H%M%S" -tagsfromfile "%f.cr2" "-FileName<D:\__\test\${DateTimeOriginal}_${FileNumber}.%le" --ext cr2 .
 exiftool -r -d "%Y/%Y%m%d/%Y%m%d_%H%M%S" "-FileName<D:\__\test\${DateTimeOriginal}_${FileNumber}.%le" -ext cr2 .
@@ -14,6 +15,8 @@ exiftool -r -d "%Y/%Y%m%d/%Y%m%d_%H%M%S" "-FileName<${DateTimeOriginal}_${Model}
 Common
 ------
 
+exiftool -r -d "%Y/%Y%m%d/%Y%m%d_%H%M%S" "-TestName<${DateTimeOriginal}_${FileName}" .
+exiftool "-TestName<${Model;s/ //g;s/-//g}" .
 exiftool -w txt -s .
 exiftool -w html -s -h .
 exiftool -sort -G -s .
