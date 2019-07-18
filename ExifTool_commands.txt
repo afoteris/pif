@@ -5,6 +5,7 @@ Canon EOS 600D (.cr2)
 ---------------------
 
 exiftool -r -P -overwrite_original -wm cg -progress "-IPTC:ObjectName<Filename" "-XMP:Title<Filename" "-XMP:PreservedFileName<Filename" .
+exiftool -r -P -overwrite_original -wm cg -progress "-IPTC:ObjectName<Filename" "-XMP:Title<Filename" "-XMP:PreservedFileName<Filename" "-XMP:CameraFilename<Filename" "-XMP:OriginalFileName<Filename" "-XMP:RawFileName<Filename" .
 -- StartSet --
 exiftool -r -d "%Y/%Y%m%d/%Y%m%d_%H%M%S" -tagsfromfile "%f.cr2" "-FileName<D:\__\test\${DateTimeOriginal}_${FileNumber}.%le" --ext cr2 .
 exiftool -r -d "%Y/%Y%m%d/%Y%m%d_%H%M%S" "-FileName<D:\__\test\${DateTimeOriginal}_${FileNumber}.%le" -ext cr2 .
@@ -21,3 +22,12 @@ exiftool -w txt -s .
 exiftool -w html -s -h .
 exiftool -sort -G -s .
 exiftool -sort -G -s -FileNumber .
+
+IPTC:ObjectName
+XMP:Title
+XMP:PreservedFileName
+XMP:CameraFilename
+XMP:OriginalFileName
+XMP:RawFileName
+
+
