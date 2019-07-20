@@ -6,8 +6,8 @@ Reasons
 
 It is necessary to create a relatively unique works name of the minimum length to avoid collisions in the archive with the maximum variety of shooting conditions.
 
-Agregements
------------
+Agreements
+----------
 
 - All works have correct and undamaged data.
 - Правила не жёсткие и являются лишь основой, система может быть изменена на свой страх и риск при необходимости.
