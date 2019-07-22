@@ -12,6 +12,7 @@ exiftool -r -d "%Y/%Y%m%d/%Y%m%d_%H%M%S" "-FileName<D:\__\test\${DateTimeOrigina
 -- EndSet --
 exiftool -r -d "%Y/%Y%m%d/%Y%m%d_%H%M%S" "-FileName<${DateTimeOriginal}_${FileNumber}_${FileName}" .
 exiftool -r -d "%Y/%Y%m%d/%Y%m%d_%H%M%S" "-FileName<${DateTimeOriginal}_${Model}_${SerialNumber}_${FileName}" .
+exiftool -r -progress -artist="Andrei Korzhyts" . -ext CR2
 
 Common
 ------
