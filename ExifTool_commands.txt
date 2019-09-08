@@ -8,13 +8,13 @@ exiftool -r -P -overwrite_original -wm cg -progress "-IPTC:ObjectName<Filename" 
 ~~~~~~~~~~~~~~~~
 
 exiftool -r -d "%Y/%Y%m%d/%Y%m%d_%H%M%S" -tagsfromfile "%f.cr2" "-FileName<D:\_\${DateTimeOriginal}_${FileNumber}.%le" --ext cr2 .
-exiftool -r -d "%Y/%Y%m%d/%Y%m%d_%H%M%S" "-FileName<D:\__\test\${DateTimeOriginal}_${FileNumber}.%le" --ext cr2 .
+exiftool -r -d "%Y/%Y%m%d/%Y%m%d_%H%M%S" "-FileName<D:\__\test\${DateTimeOriginal}_${FileNumber}.%le" -ext cr2 .
 
 ~~~~~~~~~~~~~~~~
 
 exiftool -r -d "%Y/%Y%m%d/%Y%m%d_%H%M%S" "-FileName<${DateTimeOriginal}_${FileNumber}_${FileName}" --ext cr2 .
 exiftool -r -d "%Y/%Y%m%d/%Y%m%d_%H%M%S" "-FileName<${DateTimeOriginal}_${Model}_${SerialNumber}_${FileName}" --ext cr2 .
-exiftool -r -progress -artist="Author Name" -copyright="Author Name" --ext CR2 .
+exiftool -r -progress -artist="Author Name" -ext CR2 .
 
 
 ## COMMON
