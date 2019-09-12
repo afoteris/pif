@@ -16,6 +16,7 @@ exiftool -r -d "%Y/%Y%m%d/%Y%m%d_%H%M%S" "-FileName<${DateTimeOriginal}_${FileNu
 exiftool -r -d "%Y/%Y%m%d/%Y%m%d_%H%M%S" "-FileName<${DateTimeOriginal}_${Model}_${SerialNumber}_${FileName}" --ext cr2 .
 exiftool -r -progress -artist="Author Name" -copyright="Author Name" -by-line="Author Name" -copyrightnotice="Author Name" -creator="Author Name" -rights="Author Name" -ext CR2 .
 
+exiftool -r -progress -artist="Andrei Korzhyts" -copyright="Andrei Korzhyts" -by-line="Andrei Korzhyts" -copyrightnotice="Andrei Korzhyts" -creator="Andrei Korzhyts" -rights="Andrei Korzhyts" -ext jpg .
 
 ## COMMON
 
