@@ -97,14 +97,30 @@ D:\2019\20190718\…:
 
 
 В основе практической реализации лежит приложение ExifTool
-
 https://owl.phy.queensu.ca/~phil/exiftool
-
 от Фила Харви (Phil Harvey).
+
+
+ПРИМЕР ШАГОВ ДЛЯ УПОРЯДОЧИВАНИЯ И ИМЕНОВАНИЯ RAW-ФАЙЛОВ И ИХ ПРОИЗВОДНЫХ
+
+
+Примеры команд приведены для камеры CANON EOS 600D (расширение raw-файлов .CR2).
+
 
 • Сбор raw-файлов в промежуточной папке.
 • Удаление ненужных raw-файлов.
+• Занесение информации об авторских правах на raw-файлы в их метаданные.
+
+exiftool -r -progress -artist="Author Name" -copyright="Author Name" -by-line="Author Name" -copyrightnotice="Author Name" -creator="Author Name" -rights="Author Name" *.cr2
+
+• Занесение оригинального названия raw-файлов в их метаданные.
+
+exiftool -r -P -overwrite_original -wm cg -progress "-IPTC:ObjectName<Filename" "-XMP:Title<Filename" "-XMP:PreservedFileName<Filename" "-XMP:CameraFilename<Filename" "-XMP:OriginalFileName<Filename" "-XMP:RawFileName<Filename" *.cr2
+
 • Распределение с переименованием оставшихся raw-файлов по структуре папок.
+
+exiftool -r -d "%Y/%Y%m%d/%Y%m%d_%H%M%S" "-FileName<D:\${DateTimeOriginal}_f0300_${Model;s/ //g}_${InternalSerialNumber}_${FileName}" *.cr2
+
 • Создание производных raw-файлов (производные создаются в той же папке, что и raw-файлы, а так же получают уточнённое имя при необходимости, например, с добавлением версии).
 
 

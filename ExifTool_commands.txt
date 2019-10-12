@@ -1,22 +1,9 @@
 # WORKFLOW EXIFTOOL COMMANDS
 
 
-## CANON EOS 600D (.CR2)
-
-exiftool -r -P -overwrite_original -wm cg -progress "-IPTC:ObjectName<Filename" "-XMP:Title<Filename" "-XMP:PreservedFileName<Filename" "-XMP:CameraFilename<Filename" "-XMP:OriginalFileName<Filename" "-XMP:RawFileName<Filename" --ext cr2 .
-
-~~~~~~~~~~~~~~~~
-
 exiftool -r -d "%Y/%Y%m%d/%Y%m%d_%H%M%S" -tagsfromfile "%f.cr2" "-FileName<D:\_\${DateTimeOriginal}_${FileNumber}.%le" --ext cr2 .
-exiftool -r -d "%Y/%Y%m%d/%Y%m%d_%H%M%S" "-FileName<D:\__\test\${DateTimeOriginal}_${FileNumber}.%le" -ext cr2 .
 
-~~~~~~~~~~~~~~~~
-
-exiftool -r -d "%Y/%Y%m%d/%Y%m%d_%H%M%S" "-FileName<${DateTimeOriginal}_${FileNumber}_${FileName}" --ext cr2 .
-exiftool -r -d "%Y/%Y%m%d/%Y%m%d_%H%M%S" "-FileName<${DateTimeOriginal}_${Model}_${SerialNumber}_${FileName}" --ext cr2 .
-exiftool -r -progress -artist="Author Name" -copyright="Author Name" -by-line="Author Name" -copyrightnotice="Author Name" -creator="Author Name" -rights="Author Name" -ext CR2 .
-
-exiftool -r -progress -artist="Andrei Korzhyts" -copyright="Andrei Korzhyts" -by-line="Andrei Korzhyts" -copyrightnotice="Andrei Korzhyts" -creator="Andrei Korzhyts" -rights="Andrei Korzhyts" -ext jpg .
+exiftool -r -progress -artist="Andrei Korzhyts" -copyright="Andrei Korzhyts" -by-line="Andrei Korzhyts" -copyrightnotice="Andrei Korzhyts" -creator="Andrei Korzhyts" -rights="Andrei Korzhyts" *.jpg
 
 ## COMMON
 
@@ -25,12 +12,6 @@ exiftool -r "-TestName<${Model;s/ //g;s/-//g}" --ext cr2 .
 exiftool -r -w html -s -h -ext cr2 .
 exiftool -r -sort -G -s -FileNumber -ext cr2 .
 
-IPTC:ObjectName
-XMP:Title
-XMP:PreservedFileName
-XMP:CameraFilename
-XMP:OriginalFileName
-XMP:RawFileName
 
 ***
 
