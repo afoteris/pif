@@ -78,15 +78,15 @@ v02 — версия результата для производных от raw
 • Удаление ненужных raw-файлов.
 • Занесение информации об авторских правах на raw-файлы в их метаданные.
 
-exiftool -r -progress -artist="Author Name" -copyright="Author Name" -by-line="Author Name" -copyrightnotice="Author Name" -creator="Author Name" -rights="Author Name" *.cr2
+exiftool -progress: -progress -overwrite_original -r -artist="Author Name" -copyright="Author Name" -by-line="Author Name" -copyrightnotice="Author Name" -creator="Author Name" -rights="Author Name" *.cr2
 
 • Занесение исходного названия raw-файлов в их метаданные.
 
-exiftool -r -P -overwrite_original -wm cg -progress "-IPTC:ObjectName<Filename" "-XMP:PreservedFileName<Filename" "-XMP:CameraFilename<Filename" "-XMP:OriginalFileName<Filename" "-XMP:RawFileName<Filename" *.cr2
+exiftool -progress: -progress -overwrite_original -r "-IPTC:ObjectName<Filename" "-XMP:PreservedFileName<Filename" "-XMP:CameraFilename<Filename" "-XMP:OriginalFileName<Filename" "-XMP:RawFileName<Filename" *.cr2
 
 • Распределение с переименованием оставшихся raw-файлов по структуре папок.
 
-exiftool -r -d "%Y/%Y%m%d/%Y%m%d_%H%M%S" "-FileName<D:\${DateTimeOriginal}_f0300_${Model;s/ //g}_${InternalSerialNumber}_${FileName}" *.cr2
+exiftool -progress: -progress -r -d "%Y/%Y%m%d/%Y%m%d_%H%M%S" "-FileName<D:\${DateTimeOriginal}_f0300_${Model;s/ //g}_${InternalSerialNumber}_${FileName}" *.cr2
 
 …D:\… — буква диска задаётся вручную.
 
