@@ -115,11 +115,14 @@ exiftool -r -progress -artist="Author Name" -copyright="Author Name" -by-line="A
 
 • Занесение оригинального названия raw-файлов в их метаданные.
 
-exiftool -r -P -overwrite_original -wm cg -progress "-IPTC:ObjectName<Filename" "-XMP:Title<Filename" "-XMP:PreservedFileName<Filename" "-XMP:CameraFilename<Filename" "-XMP:OriginalFileName<Filename" "-XMP:RawFileName<Filename" *.cr2
+exiftool -r -P -overwrite_original -wm cg -progress "-IPTC:ObjectName<Filename" "-XMP:PreservedFileName<Filename" "-XMP:CameraFilename<Filename" "-XMP:OriginalFileName<Filename" "-XMP:RawFileName<Filename" *.cr2
 
 • Распределение с переименованием оставшихся raw-файлов по структуре папок.
 
 exiftool -r -d "%Y/%Y%m%d/%Y%m%d_%H%M%S" "-FileName<D:\${DateTimeOriginal}_f0300_${Model;s/ //g}_${InternalSerialNumber}_${FileName}" *.cr2
+
+…D:\… — буква диска задаётся вручную.
+…f0300… — часовой пояс задаётся вручную, если он не прописан камерой в метаданные.
 
 • Создание производных raw-файлов (производные создаются в той же папке, что и raw-файлы, а так же получают уточнённое имя при необходимости, например, с добавлением версии).
 
