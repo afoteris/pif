@@ -73,7 +73,7 @@ v02 — версия результата для производных от raw
 ПОРЯДОК ДЕЙСТВИЙ
 
 
-• Сбор raw-файлов в промежуточной папке.
+• Сбор raw-файлов в промежуточной папке, желательно в её корне.
 • Удаление ненужных raw-файлов.
 • Занесение в метаданные raw-файлов информации об авторских правах на фотографии.
 
@@ -83,9 +83,13 @@ exiftool -progress: -progress -overwrite_original -r -artist="Author Name" -copy
 
 exiftool -progress: -progress -overwrite_original -r "-IPTC:ObjectName<Filename" "-XMP:PreservedFileName<Filename" "-XMP:CameraFilename<Filename" "-XMP:OriginalFileName<Filename" "-XMP:RawFileName<Filename" *.cr2
 
+• Если в метаданных отсутствует информация о часовом поясе, то его добавление делается вручную.
+
+exiftool -progress: -progress -overwrite_original -r -OffsetTime=+03:00 -OffsetTimeOriginal=+03:00 -OffsetTimeDigitized=+03:00 *.cr2
+
 • Распределение с переименованием оставшихся raw-файлов по структуре папок.
 
-exiftool -progress: -progress -r -d "%Y/%Y%m%d/%Y%m%d_%H%M%S" "-FileName<D:\${DateTimeOriginal}_f0300_${Model;s/ //g}_${InternalSerialNumber}_${FileName}" *.cr2
+exiftool -progress: -progress -r -d "%Y/%Y%m%d/%Y%m%d_%H%M%S" "-FileName<D:\${DateTimeOriginal}_${OffsetTimeOriginal;s/\+/f/;s/-/b/;s/://}_${Model;s/ //g}_${InternalSerialNumber}_${FileName}" *.cr2
 
 …D:\… — буква диска задаётся вручную.
 
