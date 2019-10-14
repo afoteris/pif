@@ -75,7 +75,7 @@ v02 — версия результата для производных от raw
 
 • Сбор raw-файлов в промежуточной папке.
 • Удаление ненужных raw-файлов.
-• Занесение информации об авторских правах на raw-файлы в их метаданные.
+• Занесение в метаданные raw-файлов информации об авторских правах на фотографии.
 
 exiftool -progress: -progress -overwrite_original -r -artist="Author Name" -copyright="Author Name" -by-line="Author Name" -copyrightnotice="Author Name" -creator="Author Name" -rights="Author Name" *.cr2
 
