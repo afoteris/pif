@@ -80,7 +80,7 @@ v02 — версия результата для производных от raw
 • Удаление ненужных raw-файлов.
 • Занесение в метаданные raw-файлов информации об авторских правах на фотографии.
 
-exiftool -progress: -progress -overwrite_original -r -artist="Author Name" -copyright="Author Name" -by-line="Author Name" -copyrightnotice="Author Name" -creator="Author Name" -rights="Author Name" *.cr2
+exiftool -progress: -progress -overwrite_original -r -EXIF:Artist="Author Name" -EXIF:Copyright="Author Name" -IPTC:By-Line="Author Name" -IPTC:CopyrightNotice="Author Name" -XMP:Creator="Author Name" -XMP:Rights="Author Name" *.cr2
 
 • Занесение исходного названия raw-файлов в их метаданные.
 
@@ -88,7 +88,7 @@ exiftool -progress: -progress -overwrite_original -r "-IPTC:ObjectName<Filename"
 
 • Если в метаданных отсутствует информация о часовом поясе, то его добавление делается вручную.
 
-exiftool -progress: -progress -overwrite_original -r -OffsetTime=+03:00 -OffsetTimeOriginal=+03:00 -OffsetTimeDigitized=+03:00 *.cr2
+exiftool -progress: -progress -overwrite_original -r -EXIF:OffsetTime="+03:00" -EXIF:OffsetTimeOriginal="+03:00" -EXIF:OffsetTimeDigitized="+03:00" *.cr2
 
 • Распределение с переименованием оставшихся raw-файлов по структуре папок.
 
