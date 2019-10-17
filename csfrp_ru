@@ -80,19 +80,19 @@ v02 — версия результата для производных от raw
 • Удаление ненужных raw-файлов.
 • Занесение в метаданные raw-файлов информации об авторских правах на фотографии.
 
-exiftool -progress: -progress -overwrite_original -r -EXIF:Artist="Author Name" -EXIF:Copyright="Author Name" -IPTC:By-Line="Author Name" -IPTC:CopyrightNotice="Author Name" -XMP:Creator="Author Name" -XMP:Rights="Author Name" *.cr2
+exiftool -progress: -progress -overwrite_original -r -EXIF:Artist="Author Name" -EXIF:Copyright="Author Name" -IPTC:By-Line="Author Name" -IPTC:CopyrightNotice="Author Name" -XMP:Creator="Author Name" -XMP:Rights="Author Name" -ext cr2 .
 
 • Занесение исходного названия raw-файлов в их метаданные.
 
-exiftool -progress: -progress -overwrite_original -r "-IPTC:ObjectName<Filename" "-XMP:PreservedFileName<Filename" "-XMP:CameraFilename<Filename" "-XMP:OriginalFileName<Filename" "-XMP:RawFileName<Filename" *.cr2
+exiftool -progress: -progress -overwrite_original -r "-IPTC:ObjectName<Filename" "-XMP:PreservedFileName<Filename" "-XMP:CameraFilename<Filename" "-XMP:OriginalFileName<Filename" "-XMP:RawFileName<Filename" -ext cr2 .
 
 • Если в метаданных отсутствует информация о часовом поясе, то его добавление делается вручную.
 
-exiftool -progress: -progress -overwrite_original -r -EXIF:OffsetTime="+03:00" -EXIF:OffsetTimeOriginal="+03:00" -EXIF:OffsetTimeDigitized="+03:00" *.cr2
+exiftool -progress: -progress -overwrite_original -r -EXIF:OffsetTime="+03:00" -EXIF:OffsetTimeOriginal="+03:00" -EXIF:OffsetTimeDigitized="+03:00" -ext cr2 .
 
 • Распределение с переименованием оставшихся raw-файлов по структуре папок.
 
-exiftool -progress: -progress -r -d "%Y/%Y%m%d/%Y%m%d_%H%M%S" "-FileName<D:\${DateTimeOriginal}_${OffsetTimeOriginal;s/\+/f/;s/-/b/;s/://}_${Model;s/ //g}_${InternalSerialNumber}_${FileName}" *.cr2
+exiftool -progress: -progress -r -d "%Y/%Y%m%d/%Y%m%d_%H%M%S" "-FileName<D:\${DateTimeOriginal}_${OffsetTimeOriginal;s/\+/f/;s/-/b/;s/://}_${Model;s/ //g}_${InternalSerialNumber}_${FileName}" -ext cr2 .
 
 …D:\… — буква диска задаётся вручную.
 
