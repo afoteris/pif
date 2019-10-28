@@ -33,7 +33,7 @@ GENERAL PROVISIONS
 
 
 • The system is based on chronology and use of values of specific metadata for naming.
-• The system is not strict and is only the basis, if necessary or if desired, digressions with preservation of the main point are permissible under user's personal responsibility
+• The system is not strict and is only the basis, if necessary or if desired, digressions with preservation of the essence are permissible under user's personal responsibility
 • Shooting conditions are assumed preferably within a single time zone on the Earth planet.
 • Metadata values for naming are taken from original files of file representation of photos — raw files.
 • All raw files must have at least sufficient for the system array of reliable original metadata.
@@ -41,6 +41,14 @@ GENERAL PROVISIONS
 
 https://owl.phy.queensu.ca/~phil/exiftool
 
-•
-•
-•
+• It is expected that user has at least a primary level of understanding of the ExifTool and Perl-compatible regular expressions.
+• Because of the diversity of composition and content of metadata by different equipment manufacturers, the ExifTool commands proposed here reflects a particular case only, and it is assumed that, perhaps, there will be a need to adapt them with preservation of their essence to personal conditions and preferences.
+• There must be an intermediate folder to collect raw files before ordering and using of them:
+
+STORAGE_MEDIUM\INTERMEDIATE_FOLDER\
+
+• The resulting structure of folders and files must be at the root of storage medium in order to more likely keep within length limit of full file name in different control digital systems; for example, the Windows provides a maximum of 260 characters for a full name.
+
+• Only Latin, numbers and underscore are used:
+
+a-Z, 0-9, _
