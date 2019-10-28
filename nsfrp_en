@@ -5,3 +5,25 @@ Version: 0.0.0^
 
 
 ————————————————
+
+
+R E A S O N S
+
+
+In the environment of control digital systems based on the uniqueness of file names, there is a need:
+1. for eliminating the possibility of appearing of photo files with the same names, because in these cases there is a threat of loss of them due to overwriting;
+2. for eliminating of incompatibility of naming systems of individual subsets of file representation of photos, because in these cases the convenience and productivity of shared use and maintenance of them is reduced.
+
+
+D I R E C T I O N  O F  T H E  S O L U T I O N
+
+Creating a unified naming system of file representation of photos, which completely or sufficiently eliminates the occurrence of files of the same name.
+
+
+R E Q U I R E M E N T S  F O R  T H E  S O L U T I O N
+
+
+The solution should strive for the most possible freedom for the conditions of creation, use and maintenance of file representation of photos.
+
+
+S O L U T I O N
