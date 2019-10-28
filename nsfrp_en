@@ -27,3 +27,20 @@ The solution should strive for the most possible freedom for the conditions of c
 
 
 S O L U T I O N
+
+
+GENERAL PROVISIONS
+
+
+• The system is based on chronology and use of values of specific metadata for naming.
+• The system is not strict and is only the basis, if necessary or if desired, digressions with preservation of the main point are permissible under user's personal responsibility
+• Shooting conditions are assumed preferably within a single time zone on the Earth planet.
+• Metadata values for naming are taken from original files of file representation of photos — raw files.
+• All raw files must have at least sufficient for the system array of reliable original metadata.
+• Software tool for realization of the system is ExifTool application by Phil Harvey.
+
+https://owl.phy.queensu.ca/~phil/exiftool
+
+•
+•
+•
