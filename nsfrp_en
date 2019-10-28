@@ -17,6 +17,7 @@ In the environment of control digital systems based on the uniqueness of file na
 
 D I R E C T I O N  O F  T H E  S O L U T I O N
 
+
 Creating a unified naming system of file representation of photos, which completely or sufficiently eliminates the occurrence of files of the same name.
 
 
@@ -48,7 +49,12 @@ https://owl.phy.queensu.ca/~phil/exiftool
 STORAGE_MEDIUM\INTERMEDIATE_FOLDER\
 
 • The resulting structure of folders and files must be at the root of storage medium in order to more likely keep within length limit of full file name in different control digital systems; for example, the Windows provides a maximum of 260 characters for a full name.
-
 • Only Latin, numbers and underscore are used:
 
 a-Z, 0-9, _
+
+This enables to make the names of folders and files uniform for easy visual perception, especially by people with poor eyesight, and also this enables to simplify the writing of personal scripts using these names.
+• Names and hierarchy of folders are based on the chronology of intra-camera creation dates of raw files, because it is predisposed more than other parameters to unambiguity and clearness at the same time:
+
+STORAGE_MEDIUM\YYYY\YYYYMMDD\FILES
+
