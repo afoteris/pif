@@ -58,3 +58,76 @@ This enables to make the names of folders and files uniform for easy visual perc
 
 STORAGE_MEDIUM\YYYY\YYYYMMDD\FILES
 
+• Only specific and and in total sufficient for relative global uniqueness metadata are used for the system:
+
+20190718 — date.
+032000 — time.
+f0300 or b0230 — time zone (f — forward, b — backward).
+CanonEOS5DMarkIV — camera model (this can be neglected and only camera serial number can be used, probability of coincidence of which with serial numbers of other manufacturers is negligible).
+163066096287 — camera serial number.
+IMG_0024 — original name of raw file (some cameras writes number of raw file into metadata, for example, FileNumber:100-0024 in IMG_0024.cr2, which also can be used as original name after replacing hyphen with underscore or removing it at all).
+v02 — version of the result for derivative works of raw files (v — version).
+
+• Some cameras may not write the necessary metadata, in this case user must add this metadata before naming manually.
+
+
+PROCEDURE
+
+
+• Gathering of raw files in intermediate folder, preferably at it's root.
+• Deleting of unnecessary raw files.
+• Filing of copyright information in metadata of raw files.
+
+exiftool -progress: -progress -r -EXIF:Artist="Author Name" -EXIF:Copyright="Author Name" -IPTC:By-Line="Author Name" -IPTC:CopyrightNotice="Author Name" -XMP:Creator="Author Name" -XMP:Rights="Author Name" -ext cr2 .
+
+• Filing of original names of raw files in their metadata.
+
+exiftool -progress: -progress -r "-IPTC:ObjectName<Filename" "-XMP:PreservedFileName<Filename" "-XMP:CameraFilename<Filename" "-XMP:OriginalFileName<Filename" "-XMP:RawFileName<Filename" -ext cr2 .
+
+• If there is no time zone information in raw files metadata, it is added manually.
+
+exiftool -progress: -progress -r -EXIF:OffsetTime="+03:00" -EXIF:OffsetTimeOriginal="+03:00" -EXIF:OffsetTimeDigitized="+03:00" -ext cr2 .
+
+• Distributing and with renaming of the remained raw files among structure of folders.
+
+exiftool -progress: -progress -r -d "%Y/%Y%m%d/%Y%m%d_%H%M%S" "-FileName<D:\${DateTimeOriginal}_${OffsetTimeOriginal;s/\+/f/;s/-/b/;s/://}_${Model;s/ //g}_${SerialNumber}_${FileName}" -ext cr2 .
+
+…D:\… — the drive letter is set manually.
+
+• Creating of derivative works of raw-files (psd, jpg...). Derivative works are created in the same folder as the raw files are, and also they get refined names if needed, for example, with the version added.
+
+
+E X A M P L E S
+
+
+FULL COMPLIANCE WITH THE SYSTEM
+
+
+D:\2019\20190718\…:
+• …20190718_032000_f0300_CanonEOS5DMarkIV_163066096287_IMG_0024.cr2
+• …20190718_032000_f0300_CanonEOS5DMarkIV_163066096287_IMG_0024.psd
+• …20190718_032000_f0300_CanonEOS5DMarkIV_163066096287_IMG_0024_v02.psd
+• …20190718_032000_f0300_CanonEOS5DMarkIV_163066096287_IMG_0024.jpg
+• …20190718_032000_f0300_CanonEOS5DMarkIV_163066096287_IMG_0024_v02.jpg
+
+
+CUSTOM DIGRESSIONS
+
+
+• D:\2019\20190718\20190718_032000_f0300_163066096287_IMG_0024.cr2
+• D:\2019\20190718\20190718_032000_f0300_163066096287_IMG_0024_v02.jpg
+• D:\2019\20190718_Minsk\20190718_032000_f0300_CanonEOS5DMarkIV163066096287IMG0024.cr2
+• D:\2019\20190718_Photography_workshop\20190718032000_f0300163066096287IMG0024.cr2
+• D:\2019\20190718\20190718_032000f0300_IMG0024.cr2
+• D:\2019\20190718\20190718_IMG0024.cr2 (this is one of the variants having low uniqueness of the name, not recommended)
+
+
+————————————————
+
+
+Composed according to Textasis — textasis.afoteris.com.
+© Andrei Korzhyts, Elena Abrazhevich, 2019–∞
+gmail: andreikorzhyts
+
+
+
