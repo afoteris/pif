@@ -14,6 +14,7 @@
             white-space: pre-wrap;
             max-width: 640px;
             font-size: 16px;
+            word-wrap: break-word;
         }
         .lang {
             display: block;
@@ -113,7 +114,7 @@ exiftool -progress: -progress -r -EXIF:Artist="Author Name" -EXIF:Copyright="Aut
 
 • Filing of original names of raw files in their metadata.
 
-exiftool -progress: -progress -r "-IPTC:ObjectName<Filename" "-XMP:PreservedFileName<Filename" "-XMP:CameraFilename<Filename" "-XMP:OriginalFileName<Filename" "-XMP:RawFileName<Filename" -ext cr2 .
+exiftool -progress: -progress -r "-IPTC:ObjectName&#60;Filename" "-XMP:PreservedFileName&#60;Filename" "-XMP:CameraFilename&#60;Filename" "-XMP:OriginalFileName&#60;Filename" "-XMP:RawFileName&#60;Filename" -ext cr2 .
 
 • If there is no time zone information in raw files metadata, it is added manually.
 
@@ -121,7 +122,7 @@ exiftool -progress: -progress -r -EXIF:OffsetTime="+03:00" -EXIF:OffsetTimeOrigi
 
 • Distributing and with renaming of the remained raw files among structure of folders.
 
-exiftool -progress: -progress -r -d "%Y/%Y%m%d/%Y%m%d_%H%M%S" "-FileName<D:\${DateTimeOriginal}_${OffsetTimeOriginal;s/\+/f/;s/-/b/;s/://}_${Model;s/ //g}_${SerialNumber}_${FileName}" -ext cr2 .
+exiftool -progress: -progress -r -d "%Y/%Y%m%d/%Y%m%d_%H%M%S" "-FileName&#60;D:\${DateTimeOriginal}_${OffsetTimeOriginal;s/\+/f/;s/-/b/;s/://}_${Model;s/ //g}_${SerialNumber}_${FileName}" -ext cr2 .
 
 …D:\… — the drive letter is set manually.
 
