@@ -1,7 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(55997491, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/55997491" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    <meta charset="UTF-8">
+    <title>NSFRP</title>
+    <link rel="stylesheet" href="http://commonresources.afoteris.com/initstyles.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="nsfrp_ru.html" class="lang">ru</a>
+<pre>
 N_A_M_I_N_G  S_Y_S_T_E_M  O_F  F_I_L_E  R_E_P_R_E_S_E_N_T_A_T_I_O_N  O_F  P_H_O_T_O_S
 
 
-Version: 0.1.0^
+Version: 0.1.0
 
 
 ————————————————
@@ -58,7 +84,7 @@ This enables to make the names of folders and files uniform for easy visual perc
 
 STORAGE_MEDIUM\YYYY\YYYYMMDD\FILES
 
-• Only specific and in total sufficient for relative global uniqueness metadata are used for the system:
+• Only specific and and in total sufficient for relative global uniqueness metadata are used for the system:
 
 20190718 — date.
 032000 — time.
@@ -82,7 +108,7 @@ exiftool -progress: -progress -r -EXIF:Artist="Author Name" -EXIF:Copyright="Aut
 
 • Filing of original names of raw files in their metadata.
 
-exiftool -progress: -progress -r "-IPTC:ObjectName<Filename" "-XMP:PreservedFileName<Filename" "-XMP:CameraFilename<Filename" "-XMP:OriginalFileName<Filename" "-XMP:RawFileName<Filename" -ext cr2 .
+exiftool -progress: -progress -r "-IPTC:ObjectName&#60;Filename" "-XMP:PreservedFileName&#60;Filename" "-XMP:CameraFilename&#60;Filename" "-XMP:OriginalFileName&#60;Filename" "-XMP:RawFileName&#60;Filename" -ext cr2 .
 
 • If there is no time zone information in raw files metadata, it is added manually.
 
@@ -90,7 +116,7 @@ exiftool -progress: -progress -r -EXIF:OffsetTime="+03:00" -EXIF:OffsetTimeOrigi
 
 • Distributing and with renaming of the remained raw files among structure of folders.
 
-exiftool -progress: -progress -r -d "%Y/%Y%m%d/%Y%m%d_%H%M%S" "-FileName<D:\${DateTimeOriginal}_${OffsetTimeOriginal;s/\+/f/;s/-/b/;s/://}_${Model;s/ //g}_${SerialNumber}_${FileName}" -ext cr2 .
+exiftool -progress: -progress -r -d "%Y/%Y%m%d/%Y%m%d_%H%M%S" "-FileName&#60;D:\${DateTimeOriginal}_${OffsetTimeOriginal;s/\+/f/;s/-/b/;s/://}_${Model;s/ //g}_${SerialNumber}_${FileName}" -ext cr2 .
 
 …D:\… — the drive letter is set manually.
 
@@ -127,3 +153,6 @@ D:\2019\20190718\20190718_IMG0024.cr2 (this is one of the variants having low un
 Composed according to Textasis — textasis.afoteris.com.
 © Andrei Korzhyts, Elena Abrazhevich, 2019–∞
 gmail: andreikorzhyts
+</pre>
+</body>
+</html>

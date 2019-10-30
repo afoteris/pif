@@ -1,7 +1,33 @@
-﻿С_И_С_Т_Е_М_А  И_М_Е_Н_О_В_А_Н_И_Я  Ф_А_Й_Л_О_В_О_Г_О  П_Р_Е_Д_С_Т_А_В_Л_Е_Н_И_Я  Ф_О_Т_О_Г_Р_А_Ф_И_Й
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(55997491, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/55997491" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    <meta charset="UTF-8">
+    <title>CИФПФ</title>
+    <link rel="stylesheet" href="http://commonresources.afoteris.com/initstyles.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="nsfrp_en.html" class="lang">en</a>
+<pre>
+С_И_С_Т_Е_М_А  И_М_Е_Н_О_В_А_Н_И_Я  Ф_А_Й_Л_О_В_О_Г_О  П_Р_Е_Д_С_Т_А_В_Л_Е_Н_И_Я  Ф_О_Т_О_Г_Р_А_Ф_И_Й
 
 
-Версия: 0.1.0^
+Версия: 0.1.0
 
 
 ————————————————
@@ -67,7 +93,7 @@ CanonEOS5DMarkIV — модель камеры (этим можно пренеб
 163066096287 — серийный номер камеры.
 IMG_0024 — первоначальное имя raw-файла (некоторые камеры пишут в метаданные номер raw-файла, например, FileNumber:100-0024 в IMG_0024.cr2, который также можно использовать в качестве первоначального имени, заменив дефис на п́одчёрк или убрав вовсе).
 v02 — версия результата для производных от raw-файлов (v — version (версия)).
- 
+
 • Некоторые камеры могут не записывать необходимые метаданные, тогда эти метаданные перед именованием пользователь должен добавить вручную.
 
 
@@ -82,7 +108,7 @@ exiftool -progress: -progress -r -EXIF:Artist="Author Name" -EXIF:Copyright="Aut
 
 • Занесение исходного имени raw-файлов в их метаданные.
 
-exiftool -progress: -progress -r "-IPTC:ObjectName<Filename" "-XMP:PreservedFileName<Filename" "-XMP:CameraFilename<Filename" "-XMP:OriginalFileName<Filename" "-XMP:RawFileName<Filename" -ext cr2 .
+exiftool -progress: -progress -r "-IPTC:ObjectName&#60;Filename" "-XMP:PreservedFileName&#60;Filename" "-XMP:CameraFilename&#60;Filename" "-XMP:OriginalFileName&#60;Filename" "-XMP:RawFileName&#60;Filename" -ext cr2 .
 
 • Если в метаданных raw-файлов отсутствует информация о часовом поясе, то она добавляется вручную.
 
@@ -90,7 +116,7 @@ exiftool -progress: -progress -r -EXIF:OffsetTime="+03:00" -EXIF:OffsetTimeOrigi
 
 • Распределение с переименованием оставшихся raw-файлов по структуре папок.
 
-exiftool -progress: -progress -r -d "%Y/%Y%m%d/%Y%m%d_%H%M%S" "-FileName<D:\${DateTimeOriginal}_${OffsetTimeOriginal;s/\+/f/;s/-/b/;s/://}_${Model;s/ //g}_${SerialNumber}_${FileName}" -ext cr2 .
+exiftool -progress: -progress -r -d "%Y/%Y%m%d/%Y%m%d_%H%M%S" "-FileName&#60;D:\${DateTimeOriginal}_${OffsetTimeOriginal;s/\+/f/;s/-/b/;s/://}_${Model;s/ //g}_${SerialNumber}_${FileName}" -ext cr2 .
 
 …D:\… — буква диска задаётся вручную.
 
@@ -127,3 +153,6 @@ D:\2019\20190718\20190718_IMG0024.cr2 (это один из вариантов �
 Свёрстано по Текстазису — textasis.afoteris.com.
 © Андрей Коржиц, Елена Абражевич, 2019–∞
 gmail: andreikorzhyts
+</pre>
+</body>
+</html>
