@@ -13,6 +13,7 @@ pre {
     display: block;
     margin: 0 auto 24px;
     max-width: 720px;
+    text-align: right;
     color: blue;
 }
 .lang:hover {
