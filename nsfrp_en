@@ -58,7 +58,7 @@ This enables to make the names of folders and files uniform for easy visual perc
 
 STORAGE_MEDIUM\YYYY\YYYYMMDD\FILES
 
-• Only specific and and in total sufficient for relative global uniqueness metadata are used for the system:
+• Only specific and in total sufficient for relative global uniqueness metadata are used for the system:
 
 20190718 — date.
 032000 — time.
