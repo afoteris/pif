@@ -94,7 +94,7 @@ exiftool -progress: -progress -r -d "%Y/%Y%m%d/%Y%m%d_%H%M%S" "-FileName<D:\${Da
 
 …D:\… — the drive letter is set manually.
 
-• Creating of derivative works of raw-files (psd, jpg...). Derivative works are created in the same folder as the raw files are, and also they get refined names if needed, for example, with the version added.
+• Creating of derivative works of raw-files (psd, jpg…). Derivative works are created in the same folder as the raw files are, and also they get refined names if needed, for example, with the version added.
 
 
 E X A M P L E S
