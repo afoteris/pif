@@ -27,7 +27,7 @@
 С_И_С_Т_Е_М_А  И_М_Е_Н_О_В_А_Н_И_Я  Ф_А_Й_Л_О_В_О_Г_О  П_Р_Е_Д_С_Т_А_В_Л_Е_Н_И_Я  Ф_О_Т_О_Г_Р_А_Ф_И_Й
 
 
-Версия: 0.1.1
+Версия: 0.1.2
 
 
 ————————————————
@@ -116,7 +116,7 @@ exiftool -progress: -progress -r -EXIF:OffsetTime="+03:00" -EXIF:OffsetTimeOrigi
 
 • Распределение с переименованием оставшихся raw-файлов по структуре папок.
 
-exiftool -progress: -progress -r -d "%Y/%Y%m%d/%Y%m%d_%H%M%S" "-FileName&#60;D:\${DateTimeOriginal}_${OffsetTimeOriginal;s/\+/f/;s/-/b/;s/://}_${Model;s/ //g}_${SerialNumber}_${FileName}" -ext cr2 .
+exiftool -progress: -progress -r -d "%Y/%Y%m%d/%Y%m%d_%H%M%S" "-FileName&#60;D:\${DateTimeOriginal}_${OffsetTimeOriginal;s/\+/f/;s/-/b/;s/://}_${Model;s/ //g}_${SerialNumber}_${FileName}.%le" -ext cr2 .
 
 …D:\… — буква диска задаётся вручную.
 
