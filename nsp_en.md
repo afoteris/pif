@@ -9,15 +9,15 @@ Version: 0.1.2^
 In the environment of control digital systems based on the uniqueness of file names, there is a need:
 
 1. for eliminating the possibility of appearing of photo files with the same names, because in these cases there is a threat of loss of them due to overwriting;
-2. for eliminating of incompatibility of naming systems of individual subsets of file representation of photos, because in these cases the convenience and productivity of shared use and maintenance of them is reduced.
+2. for eliminating of incompatibility of naming systems of individual subsets of photos, because in these cases the convenience and productivity of shared use and maintenance of them is reduced.
 
 ## Direction of the solution
 
-Creating a unified naming system of file representation of photos, which completely or sufficiently eliminates the occurrence of files of the same name.
+Creating a unified naming system of photos, which completely or sufficiently eliminates the occurrence of files of the same name.
 
 ## Requirements for the solution
 
-The solution should strive for the most possible freedom for the conditions of creation, use and maintenance of file representation of photos.
+The solution should strive for the most possible freedom for the conditions of creation, use and maintenance of photos.
 
 ## Solution
 
@@ -26,7 +26,7 @@ The solution should strive for the most possible freedom for the conditions of c
 - The system is based on chronology and use of values of specific metadata for naming.
 - The system is not strict and is only the basis, if necessary or if desired, digressions with preservation of the essence are permissible under user's personal responsibility.
 - Shooting conditions are assumed preferably within a single time zone on the Earth planet.
-- Metadata values for naming are taken from original files of file representation of photos — raw files.
+- Metadata values for naming are taken from original files of photos — raw files.
 - All raw files must have at least sufficient for the system array of reliable original metadata.
 - Software tool for realization of the system is ExifTool application by Phil Harvey.
 
@@ -50,12 +50,12 @@ The solution should strive for the most possible freedom for the conditions of c
 
 - Only specific and in total sufficient for relative global uniqueness metadata are used for the system:
 
-  **20190718** — date.\
-  **032000** — time.\
+  **20190718** — date (YYYYMMDD).\
+  **032000** — time written in the 24-hour notation (HHMMSS).\
   **f0300** or **b0230** — time zone (**f** — forward, **b** — backward).\
   **CanonEOS5DMarkIV** — camera model (this can be neglected and only camera serial number can be used, probability of coincidence of which with serial numbers of other manufacturers is negligible).\
   **163066096287** — camera serial number.\
-  **IMG_0024** — original name of raw file (some cameras writes number of raw file into metadata, for example, **FileNumber:100-0024** в **IMG_0024.cr2**, which also can be used as original name after replacing hyphen with underscore or removing it at all).\
+  **IMG_0024** — original name of raw file (some cameras writes number of raw file into metadata, for example, **FileNumber:100-0024** in **IMG_0024.cr2**, which also can be used as original name after replacing hyphen with underscore or removing it at all).\
   **v02** — version of the result for derivative works of raw files (**v** — version).
 
 - Some cameras may not write the necessary metadata, in this case user must add this metadata before naming manually.
