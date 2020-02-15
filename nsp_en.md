@@ -52,7 +52,7 @@ The solution should strive for the most possible freedom for the conditions of c
 
   **20190718** — date (YYYYMMDD).\
   **032000** — time written in the 24-hour notation (HHMMSS).\
-  **f0300** or **b0230** — time zone (**f** — forward, **b** — backward).\
+  **f0300** or **b0230** — time zone (**f** — forward, **b** — backward, f/bHHMM).\
   **CanonEOS5DMarkIV** — camera model (this can be neglected and only camera serial number can be used, probability of coincidence of which with serial numbers of other manufacturers is negligible).\
   **163066096287** — camera serial number.\
   **IMG_0024** — original name of raw file (some cameras writes number of raw file into metadata, for example, **FileNumber:100-0024** in **IMG_0024.cr2**, which also can be used as original name after replacing hyphen with underscore or removing it at all).\
