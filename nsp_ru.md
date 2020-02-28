@@ -49,6 +49,28 @@
 STORAGEDEVICE:\YEAR\DATA\DATA_TIME_TIMEZONE_DEVICEMODEL_DEVICESERIALNUMBER_PHOTODESIGNATION_ADDITION.EXTENSION
 ```
 
+**Рекомендуемые теги метаданных для хранения значений параметров**
+
+```
+exif:datetimeoriginal   | DATE, TIME, TIMEZONE | XMP 
+xmp:createdate          | DATE, TIME, TIMEZONE | XMP 
+datetimeoriginal        | DATE, TIME           | EXIF
+offsettimeoriginal      | TIMEZONE             | EXIF
+model                   | DEVICEMODEL          | EXIF
+tiff:model              | DEVICEMODEL          | XMP 
+xmp:creatortool         | DEVICEMODEL          | XMP 
+bodyserialnumber        | DEVICESERIALNUMBER   | EXIF
+exifex:bodyserialnumber | DEVICESERIALNUMBER   | XMP 
+crs:rawfilename         | PHOTODESIGNATION     | XMP 
+xmp:nickname            | PHOTODESIGNATION     | XMP 
+usercomment             | ADDITION             | EXIF
+exif:usercomment        | ADDITION             | XMP 
+dc:identifier           | PHOTONAME            | XMP 
+iptc4xmpext:digimagegui | PHOTONAME            | XMP 
+xmp:identifier          | PHOTONAME            | XMP 
+xmp:label               | PHOTONAME            | XMP
+```
+
 ## Примеры
 
 ### Полное соответствие системе
