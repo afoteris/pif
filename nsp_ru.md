@@ -47,11 +47,17 @@
 ### Образец схемы именования
 
 ```
-НАКОПИТЕЛЬ:\ГОД\ДАТА\ДАТА_ВРЕМЯ_ЧАСОВОЙПОЯС_МОДЕЛЬУСТРОЙСТВА_СЕРИЙНЫЙНОМЕРУСТРОЙСТВА_ОБОЗНАЧЕНИЕФОТОГРАФИИ_ДОПОЛНЕНИЕ.РАСШИРЕНИЕ
+НАКОПИТЕЛЬ:
+  \ГОД
+    \ДАТА
+      \ДАТА_ВРЕМЯ_ЧАСОВОЙПОЯС_МОДЕЛЬУСТРОЙСТВА_СЕРИЙНЫЙНОМЕРУСТРОЙСТВА_ОБОЗНАЧЕНИЕФОТОГРАФИИ_ДОПОЛНЕНИЕ.РАСШИРЕНИЕ
 ```
 
 ```сверить и перенести в английский вариант
-STORAGEDEVICE:\YEAR\DATE\DATE_TIME_TIMEZONE_DEVICEMODEL_DEVICESERIALNUMBER_PHOTODESIGNATION_ADDITION.EXTENSION
+STORAGEDEVICE:
+  \YEAR
+    \DATE
+      \DATE_TIME_TIMEZONE_DEVICEMODEL_DEVICESERIALNUMBER_PHOTODESIGNATION_ADDITION.EXTENSION
 ```
 
 ### Рекомендуемые теги метаданных для хранения данных имени
@@ -108,7 +114,44 @@ xmp:label               | Photo name           | xmp
 
 ## Примеры
 
-### Полное соответствие системе
+### Значения для тегов
+
+```
+exif:datetimeoriginal
+xmp:createdate
+"2020-02-29T08:17:08.48+03:00"
+
+datetimeoriginal
+"2020-02-29T08:17:08"
+
+offsettimeoriginal
+"+03:00"
+
+model
+tiff:model
+xmp:creatortool
+"CanonEOS600D"
+
+bodyserialnumber
+exifex:bodyserialnumber
+"163066096287"
+
+crs:rawfilename
+xmp:nickname
+"IMG0024"
+
+usercomment
+exif:usercomment
+"v02"
+
+dc:identifier
+iptc4xmpext:digimagegui
+xmp:identifier
+xmp:label
+"20200229_081708_f0300_CanonEOS600D_163066096287_IMG0024_v02"
+```
+
+### Именование с полным соответствием системе
 
 ```
 D:
@@ -138,7 +181,7 @@ D:
       \20190718_032000_f0300_CanonEOS600D_163066096287_IMG0024_CMYKv02.jpg
 ```
 
-### Пользовательские отступления
+### Именование с пользовательскими отступлениями
 
 ```
 D:
