@@ -17,6 +17,8 @@
 
 ## Решение
 
+### Общие положения
+
 - Система основана на хронологии, т. к. она присуща всему, строго линейна, а потому однозначна и наглядна. Но хронология не способна самостоятельно обеспечить неповторимость имени фотографии, поэтому она используется в комбинации с другими исходными техническими параметрами.
 - Система стремится обеспечить неповторимость имени фотографии в мировых масштабах при любых параметрах съёмки, если для составления имени фотографии используются достоверные значения параметров.
 - Используются значения только следующих исходных технических параметров:
@@ -39,7 +41,7 @@
 - Система охватывает как относительное имя фотографии (имя непосредственно самого файла), так и абсолютное, которое дополнительно включает полный путь до файла фотографии в пределах носителя.
 - При желании допустимы отступления от строгого следования системе под собственную ответственность пользователя.
 
-**Принципиальная схема именования**
+### Принципиальная схема именования
 
 ```
 НАКОПИТЕЛЬ:\ГОД\ДАТА\ДАТА_ВРЕМЯ_ЧАСОВОЙПОЯС_МОДЕЛЬУСТРОЙСТВА_СЕРИЙНЫЙНОМЕРУСТРОЙСТВА_ОБОЗНАЧЕНИЕФОТОГРАФИИ_ДОПОЛНЕНИЕ.РАСШИРЕНИЕ
@@ -49,9 +51,37 @@
 STORAGEDEVICE:\YEAR\DATE\DATE_TIME_TIMEZONE_DEVICEMODEL_DEVICESERIALNUMBER_PHOTODESIGNATION_ADDITION.EXTENSION
 ```
 
-**Рекомендуемые теги метаданных для хранения значений параметров**
+### Рекомендуемые теги метаданных для хранения значений параметров
 
 ```
+exif:datetimeoriginal   | ДАТА_ВРЕМЯ_ЧАСОВОЙПОЯС  | XMP 
+xmp:createdate          | ДАТА_ВРЕМЯ_ЧАСОВОЙПОЯС  | XMP 
+datetimeoriginal        | ДАТА_ВРЕМЯ              | EXIF
+offsettimeoriginal      | ЧАСОВОЙПОЯС             | EXIF
+model                   | МОДЕЛЬУСТРОЙСТВА        | EXIF
+tiff:model              | МОДЕЛЬУСТРОЙСТВА        | XMP 
+xmp:creatortool         | МОДЕЛЬУСТРОЙСТВА        | XMP 
+bodyserialnumber        | СЕРИЙНЫЙНОМЕРУСТРОЙСТВА | EXIF
+exifex:bodyserialnumber | СЕРИЙНЫЙНОМЕРУСТРОЙСТВА | XMP 
+crs:rawfilename         | ОБОЗНАЧЕНИЕФОТОГРАФИИ   | XMP 
+xmp:nickname            | ОБОЗНАЧЕНИЕФОТОГРАФИИ   | XMP 
+usercomment             | ДОПОЛНЕНИЕ              | EXIF
+exif:usercomment        | ДОПОЛНЕНИЕ              | XMP 
+dc:identifier           | PHOTONAME               | XMP 
+iptc4xmpext:digimagegui | PHOTONAME               | XMP 
+xmp:identifier          | PHOTONAME               | XMP 
+xmp:label               | PHOTONAME               | XMP
+```
+
+Теги принадлежат следующим стандартам:
+
+- CIPA DC-010-2017 (Exif 2.31 metadata for XMP)
+- IPTC Photo Metadata Standard 2019.1
+- PLUS Version 1.2.2
+- XMP SPECIFICATION PART 1: DATA MODEL, SERIALIZATION, AND CORE PROPERTIES. April 2012
+- XMP SPECIFICATION PART 2: ADDITIONAL PROPERTIES. August 2016
+
+```перенести в английский вариант
 exif:datetimeoriginal   | DATE, TIME, TIMEZONE | XMP 
 xmp:createdate          | DATE, TIME, TIMEZONE | XMP 
 datetimeoriginal        | DATE, TIME           | EXIF
