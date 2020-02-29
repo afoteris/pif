@@ -53,13 +53,6 @@
       \ДАТА_ВРЕМЯ_ЧАСОВОЙПОЯС_МОДЕЛЬУСТРОЙСТВА_СЕРИЙНЫЙНОМЕРУСТРОЙСТВА_ОБОЗНАЧЕНИЕФОТОГРАФИИ_ДОПОЛНЕНИЕ.РАСШИРЕНИЕ
 ```
 
-```сверить и перенести в английский вариант
-STORAGEDEVICE:
-  \YEAR
-    \DATE
-      \DATE_TIME_TIMEZONE_DEVICEMODEL_DEVICESERIALNUMBER_PHOTODESIGNATION_ADDITION.EXTENSION
-```
-
 ### Рекомендуемые теги метаданных для хранения данных имени
 
 ```
@@ -91,26 +84,6 @@ xmp:label               | Имя фотографии          | xmp
 - XMP SPECIFICATION PART 2: ADDITIONAL PROPERTIES. August 2016
 
 При необходимости можно использовать другие известные теги, например для дополнения в имени.
-
-```сверить и перенести в английский вариант
-exif:datetimeoriginal   | DATE, TIME, TIMEZONE | xmp
-xmp:createdate          | DATE, TIME, TIMEZONE | xmp
-datetimeoriginal        | DATE, TIME           | exif
-offsettimeoriginal      | TIMEZONE             | exif
-model                   | DEVICEMODEL          | exif
-tiff:model              | DEVICEMODEL          | xmp
-xmp:creatortool         | DEVICEMODEL          | xmp
-bodyserialnumber        | DEVICESERIALNUMBER   | exif
-exifex:bodyserialnumber | DEVICESERIALNUMBER   | xmp
-crs:rawfilename         | PHOTODESIGNATION     | xmp
-xmp:nickname            | PHOTODESIGNATION     | xmp
-usercomment             | ADDITION             | exif
-exif:usercomment        | ADDITION             | xmp
-dc:identifier           | Photo name           | xmp
-iptc4xmpext:digimagegui | Photo name           | xmp
-xmp:identifier          | Photo name           | xmp
-xmp:label               | Photo name           | xmp
-```
 
 ## Примеры
 

@@ -39,6 +39,33 @@ enables to simplify the writing of scripts using these names.
 - The system covers both the relative photo name (name of file itself directly) and the absolute one, which includes the full path within storage medium additionally.
 - If it is not possible to follow the system strictly, digressions are permissible under user's personal responsibility.
 
+```сверить
+STORAGEDEVICE:
+  \YEAR
+    \DATE
+      \DATE_TIME_TIMEZONE_DEVICEMODEL_DEVICESERIALNUMBER_PHOTODESIGNATION_ADDITION.EXTENSION
+```
+
+```сверить
+exif:datetimeoriginal   | DATE, TIME, TIMEZONE | xmp
+xmp:createdate          | DATE, TIME, TIMEZONE | xmp
+datetimeoriginal        | DATE, TIME           | exif
+offsettimeoriginal      | TIMEZONE             | exif
+model                   | DEVICEMODEL          | exif
+tiff:model              | DEVICEMODEL          | xmp
+xmp:creatortool         | DEVICEMODEL          | xmp
+bodyserialnumber        | DEVICESERIALNUMBER   | exif
+exifex:bodyserialnumber | DEVICESERIALNUMBER   | xmp
+crs:rawfilename         | PHOTODESIGNATION     | xmp
+xmp:nickname            | PHOTODESIGNATION     | xmp
+usercomment             | ADDITION             | exif
+exif:usercomment        | ADDITION             | xmp
+dc:identifier           | Photo name           | xmp
+iptc4xmpext:digimagegui | Photo name           | xmp
+xmp:identifier          | Photo name           | xmp
+xmp:label               | Photo name           | xmp
+```
+
 ## Examples
 
 ### Full compliance with the system
