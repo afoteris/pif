@@ -103,7 +103,7 @@ offsettimeoriginal
 model
 tiff:model
 xmp:creatortool
-"CanonEOS600D"
+"Canon EOS 600D"
 
 bodyserialnumber
 exifex:bodyserialnumber
@@ -111,7 +111,7 @@ exifex:bodyserialnumber
 
 crs:rawfilename
 xmp:nickname
-"IMG0024"
+"_IMG_0024"
 
 usercomment
 exif:usercomment
