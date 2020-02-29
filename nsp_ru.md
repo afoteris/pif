@@ -47,30 +47,30 @@
 НАКОПИТЕЛЬ:\ГОД\ДАТА\ДАТА_ВРЕМЯ_ЧАСОВОЙПОЯС_МОДЕЛЬУСТРОЙСТВА_СЕРИЙНЫЙНОМЕРУСТРОЙСТВА_ОБОЗНАЧЕНИЕФОТОГРАФИИ_ДОПОЛНЕНИЕ.РАСШИРЕНИЕ
 ```
 
-```перенести в английский вариант
+```сверить и перенести в английский вариант
 STORAGEDEVICE:\YEAR\DATE\DATE_TIME_TIMEZONE_DEVICEMODEL_DEVICESERIALNUMBER_PHOTODESIGNATION_ADDITION.EXTENSION
 ```
 
-### Рекомендуемые теги метаданных для хранения значений параметров
+### Рекомендуемые теги метаданных для хранения данных имени
 
 ```
-exif:datetimeoriginal   | ДАТА_ВРЕМЯ_ЧАСОВОЙПОЯС  | XMP 
-xmp:createdate          | ДАТА_ВРЕМЯ_ЧАСОВОЙПОЯС  | XMP 
-datetimeoriginal        | ДАТА_ВРЕМЯ              | EXIF
-offsettimeoriginal      | ЧАСОВОЙПОЯС             | EXIF
-model                   | МОДЕЛЬУСТРОЙСТВА        | EXIF
-tiff:model              | МОДЕЛЬУСТРОЙСТВА        | XMP 
-xmp:creatortool         | МОДЕЛЬУСТРОЙСТВА        | XMP 
-bodyserialnumber        | СЕРИЙНЫЙНОМЕРУСТРОЙСТВА | EXIF
-exifex:bodyserialnumber | СЕРИЙНЫЙНОМЕРУСТРОЙСТВА | XMP 
-crs:rawfilename         | ОБОЗНАЧЕНИЕФОТОГРАФИИ   | XMP 
-xmp:nickname            | ОБОЗНАЧЕНИЕФОТОГРАФИИ   | XMP 
-usercomment             | ДОПОЛНЕНИЕ              | EXIF
-exif:usercomment        | ДОПОЛНЕНИЕ              | XMP 
-dc:identifier           | PHOTONAME               | XMP 
-iptc4xmpext:digimagegui | PHOTONAME               | XMP 
-xmp:identifier          | PHOTONAME               | XMP 
-xmp:label               | PHOTONAME               | XMP
+exif:datetimeoriginal   | ДАТА_ВРЕМЯ_ЧАСОВОЙПОЯС  | xmp
+xmp:createdate          | ДАТА_ВРЕМЯ_ЧАСОВОЙПОЯС  | xmp
+datetimeoriginal        | ДАТА_ВРЕМЯ              | exif
+offsettimeoriginal      | ЧАСОВОЙПОЯС             | exif
+model                   | МОДЕЛЬУСТРОЙСТВА        | exif
+tiff:model              | МОДЕЛЬУСТРОЙСТВА        | xmp
+xmp:creatortool         | МОДЕЛЬУСТРОЙСТВА        | xmp
+bodyserialnumber        | СЕРИЙНЫЙНОМЕРУСТРОЙСТВА | exif
+exifex:bodyserialnumber | СЕРИЙНЫЙНОМЕРУСТРОЙСТВА | xmp
+crs:rawfilename         | ОБОЗНАЧЕНИЕФОТОГРАФИИ   | xmp
+xmp:nickname            | ОБОЗНАЧЕНИЕФОТОГРАФИИ   | xmp
+usercomment             | ДОПОЛНЕНИЕ              | exif
+exif:usercomment        | ДОПОЛНЕНИЕ              | xmp
+dc:identifier           | Имя фотографии          | xmp
+iptc4xmpext:digimagegui | Имя фотографии          | xmp
+xmp:identifier          | Имя фотографии          | xmp
+xmp:label               | Имя фотографии          | xmp
 ```
 
 Теги принадлежат следующим стандартам:
@@ -81,24 +81,24 @@ xmp:label               | PHOTONAME               | XMP
 - XMP SPECIFICATION PART 1: DATA MODEL, SERIALIZATION, AND CORE PROPERTIES. April 2012
 - XMP SPECIFICATION PART 2: ADDITIONAL PROPERTIES. August 2016
 
-```перенести в английский вариант
-exif:datetimeoriginal   | DATE, TIME, TIMEZONE | XMP 
-xmp:createdate          | DATE, TIME, TIMEZONE | XMP 
-datetimeoriginal        | DATE, TIME           | EXIF
-offsettimeoriginal      | TIMEZONE             | EXIF
-model                   | DEVICEMODEL          | EXIF
-tiff:model              | DEVICEMODEL          | XMP 
-xmp:creatortool         | DEVICEMODEL          | XMP 
-bodyserialnumber        | DEVICESERIALNUMBER   | EXIF
-exifex:bodyserialnumber | DEVICESERIALNUMBER   | XMP 
-crs:rawfilename         | PHOTODESIGNATION     | XMP 
-xmp:nickname            | PHOTODESIGNATION     | XMP 
-usercomment             | ADDITION             | EXIF
-exif:usercomment        | ADDITION             | XMP 
-dc:identifier           | PHOTONAME            | XMP 
-iptc4xmpext:digimagegui | PHOTONAME            | XMP 
-xmp:identifier          | PHOTONAME            | XMP 
-xmp:label               | PHOTONAME            | XMP
+```сверить и перенести в английский вариант
+exif:datetimeoriginal   | DATE, TIME, TIMEZONE | xmp
+xmp:createdate          | DATE, TIME, TIMEZONE | xmp
+datetimeoriginal        | DATE, TIME           | exif
+offsettimeoriginal      | TIMEZONE             | exif
+model                   | DEVICEMODEL          | exif
+tiff:model              | DEVICEMODEL          | xmp
+xmp:creatortool         | DEVICEMODEL          | xmp
+bodyserialnumber        | DEVICESERIALNUMBER   | exif
+exifex:bodyserialnumber | DEVICESERIALNUMBER   | xmp
+crs:rawfilename         | PHOTODESIGNATION     | xmp
+xmp:nickname            | PHOTODESIGNATION     | xmp
+usercomment             | ADDITION             | exif
+exif:usercomment        | ADDITION             | xmp
+dc:identifier           | Photo name           | xmp
+iptc4xmpext:digimagegui | Photo name           | xmp
+xmp:identifier          | Photo name           | xmp
+xmp:label               | Photo name           | xmp
 ```
 
 ## Примеры
