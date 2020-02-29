@@ -81,6 +81,8 @@ xmp:label               | Имя фотографии          | xmp
 - XMP SPECIFICATION PART 1: DATA MODEL, SERIALIZATION, AND CORE PROPERTIES. April 2012
 - XMP SPECIFICATION PART 2: ADDITIONAL PROPERTIES. August 2016
 
+При необходимости можно использовать другие известные теги, например для дополнения в имени.
+
 ```сверить и перенести в английский вариант
 exif:datetimeoriginal   | DATE, TIME, TIMEZONE | xmp
 xmp:createdate          | DATE, TIME, TIMEZONE | xmp
