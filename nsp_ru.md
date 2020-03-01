@@ -167,8 +167,8 @@ D:
 ```
 D:
   \2019
-    \Belarus
-      \20190721_Gomel
+    \backstages
+      \20190721_lead_role_auditions
         \20190721_002522_IMG9966CanonEOS600D163066096287.cr2
 ```
 
