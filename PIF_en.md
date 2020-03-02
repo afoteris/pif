@@ -1,8 +1,14 @@
-﻿# Naming system of photos (NSP)
+﻿Naming order of photos (PIF)
+============================
 
 Version 0.1.2^
 
 ---
+
+Abbreviation explanation
+------------------------
+
+**PIF** (Russian: **ПИФ** [pʲˈif]) — **П**орядок **И**менования **Ф**отографий.
 
 ## Prerequisites
 
