@@ -1,12 +1,10 @@
-﻿Naming order of photos (PIF)
-============================
+﻿# Naming order of photos (PIF)
 
 Version 0.1.2^
 
 ---
 
-Abbreviation explanation
-------------------------
+## Abbreviation explanation
 
 **PIF** (Russian: **ПИФ** [pʲˈif]) — **П**орядок **И**менования **Ф**отографий.
 
