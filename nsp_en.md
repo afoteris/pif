@@ -1,4 +1,4 @@
-﻿# Naming system of photos
+﻿# Naming system of photos (NSP)
 
 Version 0.1.2^
 
