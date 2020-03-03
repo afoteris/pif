@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(55997491, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/55997491" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    <meta charset="UTF-8">
+    <title>Naming order of photos (PIF)</title>
+    <link rel="stylesheet" href="http://commonresources.afoteris.com/initstyles.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="PIF.html" class="lang">ru</a>
+<h1>Naming order of photos (PIF)</h1>
+<p>Version 0.1.2^</p>
+<hr />
+<h2>Abbreviation explanation</h2>
+<p><strong>PIF</strong> (Russian: <strong>ПИФ</strong> [pʲˈif]) — <strong>П</strong>орядок <strong>И</strong>менования <strong>Ф</strong>отографий.</p>
+<h2>Prerequisites</h2>
+<ul>
+    <li>Need for unique photo names for eliminating of threat of loss or damage of photos themselves or information about them because of the same names in the environment of control digital systems (operating, file, database…) based on the uniqueness of file names.</li>
+    <li>Need for unified and clear naming system of individual subsets of photos for ensuring of productivity when shared using and maintaining of them.</li>
+</ul>
+<h2>Direction of the solution</h2>
+<p>The solution should strive for the most possible freedom of use. This is possible if it is built on just initial technical parameters of photo creation (date and time, camera model, frame number…), but not descriptive ones (names of people, names of places or events…).</p>
+<p>Only initial technical parameters for all in its essence are constant, clear and unambiguous in time and space. At the same time there should be a minimum of these parameters for reducing of length of photo name, but enough for its uniqueness.</p>
+<h2>Solution</h2>
+<p>The system is based on chronology, because it is inherent in everything, strictly linear, and therefore unambiguous and clear. But chronology is not able to ensure the uniqueness of photo name independently, therefore it is used in combination with other initial technical parameters.</p>
+<p>The system aims to ensure the uniqueness of photo name on a global scale for any shooting parameters, if reliable values of parameters are used for composing of photo name.</p>
+<p>Only values of following initial technical parameters are used:</p>
+<p><strong>date</strong> — YYYYMMDD;<br />
+    <strong>time</strong> — HHMMSS in the 24-hour notation;<br />
+    <strong>time zone</strong> — fHHMM or bHHMM where <strong>f</strong> — forward, <strong>b</strong> — backward;<br />
+    <strong>camera model</strong>;<br />
+    <strong>camera serial number</strong>;<br />
+    <strong>frame designation</strong> — simple designation, for example,
+    original name, or composite designation, for example, composed of intracamera folder number and serial frame number;<br />
+    <strong>addition</strong> — simple addition, for example, version, purpose, or composite addition, for example, composed of color space and version. Recommended only for derivative files, if necessary.</p>
+<p>Only the following symbols are used:</p>
+<p><strong>a-Z</strong> (Latin);<br />
+    <strong>0-9</strong> (Arabic numerals);<br />
+    <strong>_</strong> (underscore) — only for visually separating of structure parts of photo name from each other; several underscores in a row are prohibited.</p>
+<p>This allows to make photo names uniform and with distinguishable structure for visual perception, and also enables to simplify the writing of scripts using these names.</p>
+<p>At desire, digressions from strict adherence to the system are permissible under user's personal responsibility.</p>
+<h3>Sample of naming scheme</h3>
+<pre><code>DATE_TIME_TIMEZONE_CAMERAMODEL_CAMERASERIALNUMBER_FRAMEDESIGNATION_ADDITION.EXTENSION
+</code></pre>
+<h3>Recommended metadata tags for storing name data</h3>
+<pre><code>exif:datetimeoriginal   | DATE_TIME_TIMEZONE | xmp
+xmp:createdate          | DATE_TIME_TIMEZONE | xmp
+datetimeoriginal        | DATE_TIME          | exif
+offsettimeoriginal      | TIMEZONE           | exif
+model                   | CAMERAMODEL        | exif
+tiff:model              | CAMERAMODEL        | xmp
+xmp:creatortool         | CAMERAMODEL        | xmp
+bodyserialnumber        | CAMERASERIALNUMBER | exif
+exifex:bodyserialnumber | CAMERASERIALNUMBER | xmp
+crs:rawfilename         | FRAMEDESIGNATION   | xmp
+xmp:nickname            | FRAMEDESIGNATION   | xmp
+usercomment             | ADDITION           | exif
+exif:usercomment        | ADDITION           | xmp
+dc:identifier           | Photo name         | xmp
+iptc4xmpext:digimagegui | Photo name         | xmp
+xmp:identifier          | Photo name         | xmp
+xmp:label               | Photo name         | xmp
+</code></pre>
+<p>Tags belong to the following standards:</p>
+<ul>
+    <li>CIPA DC-010-2017 (Exif 2.31 metadata for XMP)</li>
+    <li>IPTC Photo Metadata Standard 2019.1</li>
+    <li>PLUS Version 1.2.2</li>
+    <li>XMP SPECIFICATION PART 1: DATA MODEL, SERIALIZATION, AND CORE PROPERTIES. April 2012</li>
+    <li>XMP SPECIFICATION PART 2: ADDITIONAL PROPERTIES. August 2016</li>
+</ul>
+<p>If necessary, using of other well-known tags is available, for example, for addition in name.</p>
+<h2>Examples</h2>
+<h3>Values for the tags</h3>
+<pre><code>exif:datetimeoriginal
+xmp:createdate
+&quot;2019-07-21T00:25:22.00+03:00&quot;
+
+datetimeoriginal
+&quot;2019-07-21T00:25:22&quot;
+
+offsettimeoriginal
+&quot;+03:00&quot;
+
+model
+tiff:model
+xmp:creatortool
+&quot;Canon EOS 600D&quot;
+
+bodyserialnumber
+exifex:bodyserialnumber
+&quot;163066096287&quot;
+
+crs:rawfilename
+xmp:nickname
+&quot;_IMG_9966&quot;
+
+usercomment
+exif:usercomment
+&quot;v2&quot;
+&quot;grayscale&quot;
+
+dc:identifier
+iptc4xmpext:digimagegui
+xmp:identifier
+xmp:label
+&quot;20190721_002522_f0300_CanonEOS600D_163066096287_IMG9966_v2&quot;
+</code></pre>
+<h3>Naming with full compliance with the system</h3>
+<pre><code>20190721_002522_f0300_CanonEOS600D_163066096287_IMG9966.cr2
+
+20190721_002522_f0300_CanonEOS600D_163066096287_IMG9966_v2.psd
+
+20190721_002522_f0300_CanonEOS600D_163066096287_IMG9966_grayscale.jpg
+</code></pre>
+<h3>Naming with with custom digressions</h3>
+<pre><code>20190721_002522_IMG9966_f0300_CanonEOS600D_163066096287.cr2
+
+20190721_002522f0300_CanonEOS600D163066096287_IMG9966.cr2
+
+20190721_002522_IMG9966_CanonEOS600D163066096287.cr2
+
+20190721_002522_IMG9966.cr2
+
+20190721_002522_IMG9966_v2.jpg
+
+20190721_002522f0300_1009966.cr2
+</code></pre>
+<hr />
+<p>© A. P. Korzhyts, 2019–2020<br />
+    © E. V. Abrazhevich, translating into English, 2019–2020<br />
+    gmail: andreikorzhyts</p>
+</body>
+</html>

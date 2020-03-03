@@ -1,0 +1,46 @@
+body {
+    margin: 32px auto;
+    font-size: 20px;
+    max-width: 800px;
+    color: #323232;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 1.953em;
+    margin-bottom: 1.25em;
+    color: black;
+}
+
+p {
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+}
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+code {
+    color: #A67C00;
+}
+
+a {
+    color: blue;
+}
+
+a:hover {
+    color: blueviolet;
+}
+
+hr {
+    margin-top: 1.953em;
+    margin-bottom: 1.953em;
+}
+
+.lang {
+    display: block;
+    margin: 0 auto 24px;
+    max-width: 800px;
+    text-align: right;
+}

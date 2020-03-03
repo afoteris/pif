@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(55997491, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/55997491" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    <meta charset="UTF-8">
+    <title>Порядок именования фотографий (ПИФ)</title>
+    <link rel="stylesheet" href="http://commonresources.afoteris.com/initstyles.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="PIF_en.html" class="lang">en</a>
+<h1>Порядок именования фотографий (ПИФ)</h1>
+<p>Версия 0.1.2^</p>
+<hr />
+<h2>Предпосылки</h2>
+<ul>
+    <li>Необходимость в неповторимых именах фотографий для устранения угрозы потери или повреждения самих фотографий или информации о них из-за одинаковых имён в средах цифровых управляющих систем (операционных, файловых, баз данных…), основанных на неповторимости имён файлов.</li>
+    <li>Необходимость в единой и наглядной системе именования отдельных подмножеств фотографий для обеспечения продуктивности при их совместной эксплуатации и обслуживания.</li>
+</ul>
+<h2>Направление решения</h2>
+<p>Решение должно стремиться к наибольшей свободе применения. Это возможно, если его строить на значениях именно исходных технических (дата и время, модель камеры, номер кадра…), а не описательных (имена людей, названия мест или событий…) параметров создания фотографий.</p>
+<p>Только такие параметры для всех в своей сути являются постоянными, наглядными и однозначными во времени и пространстве. При этом этих параметров должно быть минимум для сокращения длины имени фотографии, но достаточно для его неповторимости.</p>
+<h2>Решение</h2>
+<p>Система основана на хронологии, т. к. она присуща всему, строго линейна, а потому однозначна и наглядна. Но хронология не способна самостоятельно обеспечить неповторимость имени фотографии, поэтому она используется в комбинации с другими исходными техническими параметрами.</p>
+<p>Система стремится обеспечить неповторимость имени фотографии в мировых масштабах при любых параметрах съёмки, если для составления имени фотографии используются достоверные значения параметров.</p>
+<p>Используются значения только следующих исходных технических параметров:</p>
+<p><strong>дата</strong> — ГГГГММДД;<br />
+    <strong>время</strong> — ЧЧММСС в 24-часовом формате;<br />
+    <strong>часовой пояс</strong> — fЧЧММ или bЧЧММ, где <strong>f</strong> — forward (вперёд), <strong>b</strong> — backward (назад);<br />
+    <strong>модель камеры</strong>;<br />
+    <strong>серийный номер камеры</strong>;<br />
+    <strong>обозначение кадра</strong> — простое обозначение, например, исходное имя или составное обозначение, например, из внутрикамерных номера папки и порядкового номера кадра;<br />
+    <strong>дополнение</strong> — простое дополнение, например, версия, назначение или составное дополнение из цветового пространства и версии. Рекомендуется только для производных файлов при необходимости.</p>
+<p>Используются только следующие символы:</p>
+<p><strong>a-Z</strong> (латиница);<br />
+    <strong>0-9</strong> (арабские цифры);<br />
+    <strong>_</strong> (п́одчерк) — только для визуального отделения частей структуры имени фотографии друг от друга; запрещены идущие подряд.</p>
+<p>Это позволяет сделать имена фотографий единообразными и с различимой структурой для наглядности, а также позволяет упростить написание скриптов, оперирующих этими именами.</p>
+<p>При желании допустимы отступления от строгого следования системе под собственную ответственность пользователя.</p>
+<h3>Образец схемы именования</h3>
+<pre><code>ДАТА_ВРЕМЯ_ЧАСОВОЙПОЯС_МОДЕЛЬКАМЕРЫ_СЕРИЙНЫЙНОМЕРКАМЕРЫ_ОБОЗНАЧЕНИЕКАДРА_ДОПОЛНЕНИЕ.РАСШИРЕНИЕ
+</code></pre>
+<h3>Рекомендуемые теги метаданных для хранения данных имени</h3>
+<pre><code>exif:datetimeoriginal   | ДАТА_ВРЕМЯ_ЧАСОВОЙПОЯС | xmp
+xmp:createdate          | ДАТА_ВРЕМЯ_ЧАСОВОЙПОЯС | xmp
+datetimeoriginal        | ДАТА_ВРЕМЯ             | exif
+offsettimeoriginal      | ЧАСОВОЙПОЯС            | exif
+model                   | МОДЕЛЬКАМЕРЫ           | exif
+tiff:model              | МОДЕЛЬКАМЕРЫ           | xmp
+xmp:creatortool         | МОДЕЛЬКАМЕРЫ           | xmp
+bodyserialnumber        | СЕРИЙНЫЙНОМЕРКАМЕРЫ    | exif
+exifex:bodyserialnumber | СЕРИЙНЫЙНОМЕРКАМЕРЫ    | xmp
+crs:rawfilename         | ОБОЗНАЧЕНИЕКАДРА       | xmp
+xmp:nickname            | ОБОЗНАЧЕНИЕКАДРА       | xmp
+usercomment             | ДОПОЛНЕНИЕ             | exif
+exif:usercomment        | ДОПОЛНЕНИЕ             | xmp
+dc:identifier           | Имя фотографии         | xmp
+iptc4xmpext:digimagegui | Имя фотографии         | xmp
+xmp:identifier          | Имя фотографии         | xmp
+xmp:label               | Имя фотографии         | xmp
+</code></pre>
+<p>Теги принадлежат следующим стандартам:</p>
+<ul>
+    <li>CIPA DC-010-2017 (Exif 2.31 metadata for XMP)</li>
+    <li>IPTC Photo Metadata Standard 2019.1</li>
+    <li>PLUS Version 1.2.2</li>
+    <li>XMP SPECIFICATION PART 1: DATA MODEL, SERIALIZATION, AND CORE PROPERTIES. April 2012</li>
+    <li>XMP SPECIFICATION PART 2: ADDITIONAL PROPERTIES. August 2016</li>
+</ul>
+<p>При необходимости можно использовать другие известные теги, например для дополнения в имени.</p>
+<h2>Примеры</h2>
+<h3>Значения для тегов</h3>
+<pre><code>exif:datetimeoriginal
+xmp:createdate
+&quot;2019-07-21T00:25:22.00+03:00&quot;
+
+datetimeoriginal
+&quot;2019-07-21T00:25:22&quot;
+
+offsettimeoriginal
+&quot;+03:00&quot;
+
+model
+tiff:model
+xmp:creatortool
+&quot;Canon EOS 600D&quot;
+
+bodyserialnumber
+exifex:bodyserialnumber
+&quot;163066096287&quot;
+
+crs:rawfilename
+xmp:nickname
+&quot;_IMG_9966&quot;
+
+usercomment
+exif:usercomment
+&quot;v2&quot;
+&quot;grayscale&quot;
+
+dc:identifier
+iptc4xmpext:digimagegui
+xmp:identifier
+xmp:label
+&quot;20190721_002522_f0300_CanonEOS600D_163066096287_IMG9966_v2&quot;
+</code></pre>
+<h3>Именование с полным соответствием системе</h3>
+<pre><code>20190721_002522_f0300_CanonEOS600D_163066096287_IMG9966.cr2
+
+20190721_002522_f0300_CanonEOS600D_163066096287_IMG9966_v2.psd
+
+20190721_002522_f0300_CanonEOS600D_163066096287_IMG9966_grayscale.jpg
+</code></pre>
+<h3>Именование с пользовательскими отступлениями</h3>
+<pre><code>20190721_002522_IMG9966_f0300_CanonEOS600D_163066096287.cr2
+
+20190721_002522f0300_CanonEOS600D163066096287_IMG9966.cr2
+
+20190721_002522_IMG9966_CanonEOS600D163066096287.cr2
+
+20190721_002522_IMG9966.cr2
+
+20190721_002522_IMG9966_v2.jpg
+
+20190721_002522f0300_1009966.cr2
+</code></pre>
+<hr />
+<p>© А. П. Коржиц, 2019–2020<br />
+    © Е. В. Абражевич, перевод на английский язык, 2019–2020<br />
+    gmail: andreikorzhyts</p>
+</body>
+</html>
