@@ -1,4 +1,4 @@
-﻿# Naming order of photos (PIF)
+# Naming order of photos (PIF)
 
 Version 0.1.2^
 
