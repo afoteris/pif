@@ -1,6 +1,6 @@
 # Naming order of photos (PIF)
 
-Version 0.1.2^
+Version 0.2.0
 
 ***
 
@@ -10,8 +10,8 @@ Version 0.1.2^
 
 ## Prerequisites
 
-- Need for unique photo names for eliminating of threat of loss or damage of photos themselves or information about them because of the same names in the environment of control digital systems (operating, file, database…) based on the uniqueness of file names.
-- Need for unified and clear naming system of individual subsets of photos for ensuring of productivity when shared using and maintaining of them.
+- Need for unique photo names for eliminating of threat of loss or damage of photos themselves or information about them because of the same names in the environments of control digital systems (operating, file, database…) based on the uniqueness of file names.
+- Need for unified and clear naming order of individual subsets of photos for ensuring of productivity when shared using and maintaining of them.
 
 ## Direction of the solution
 
@@ -21,9 +21,9 @@ Only initial technical parameters for all in its essence are constant, clear and
 
 ## Solution
 
-The system is based on chronology, because it is inherent in everything, strictly linear, and therefore unambiguous and clear. But chronology is not able to ensure the uniqueness of photo name independently, therefore it is used in combination with other initial technical parameters.
+The order is based on chronology, because it is inherent in everything, strictly linear, and therefore unambiguous and clear. But chronology is not able to ensure the uniqueness of photo name independently, therefore it is used in combination with other initial technical parameters.
 
-The system aims to ensure the uniqueness of photo name on a global scale for any shooting parameters, if reliable values of parameters are used for composing of photo name.
+The order aims to ensure the uniqueness of photo name on a global scale for any shooting parameters, if reliable values of parameters are used for composing of photo name.
 
 Only values of following initial technical parameters are used:
 
@@ -32,8 +32,7 @@ Only values of following initial technical parameters are used:
 **time zone** — fHHMM or bHHMM where **f** — forward, **b** — backward;  
 **camera model**;  
 **camera serial number**;  
-**frame designation** — simple designation, for example, 
-  original name, or composite designation, for example, composed of intracamera folder number and serial frame number;  
+**frame designation** — simple designation, for example, original name, or composite designation, for example, composed of intracamera folder number and serial frame number;  
 **addition** — simple addition, for example, version, purpose, or composite addition, for example, composed of color space and version. Recommended only for derivative files, if necessary.
   
 Only the following symbols are used:
@@ -44,7 +43,7 @@ Only the following symbols are used:
 
 This allows to make photo names uniform and with distinguishable structure for visual perception, and also enables to simplify the writing of scripts using these names.
 
-At desire, digressions from strict adherence to the system are permissible under user's personal responsibility.
+At desire, digressions from strict adherence to the order are permissible under user's personal responsibility.
 
 ### Sample of naming scheme
 
@@ -124,7 +123,7 @@ xmp:label
 "20190721_002522_f0300_CanonEOS600D_163066096287_IMG9966_v2"
 ```
 
-### Naming with full compliance with the system
+### Naming with full compliance with the order
 
 ```
 20190721_002522_f0300_CanonEOS600D_163066096287_IMG9966.cr2
@@ -134,7 +133,7 @@ xmp:label
 20190721_002522_f0300_CanonEOS600D_163066096287_IMG9966_grayscale.jpg
 ```
 
-### Naming with with custom digressions
+### Naming with custom digressions
 
 ```
 20190721_002522_IMG9966_f0300_CanonEOS600D_163066096287.cr2
