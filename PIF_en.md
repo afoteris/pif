@@ -6,7 +6,7 @@ Version 0.2.0
 
 ## Abbreviation explanation
 
-**PIF** (Russian: **ПИФ** [pʲˈif]) — **П**орядок **И**менования **Ф**отографий.
+**PIF** (Russian: **ПИФ** [pif]) — **П**орядок **И**менования **Ф**отографий.
 
 ## Prerequisites
 
