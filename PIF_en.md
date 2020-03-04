@@ -10,7 +10,7 @@ Version 0.1.2^
 
 ## Prerequisites
 
-- Need for unique photo names for eliminating of threat of loss or damage of photos themselves or information about them because of the same names in the environment of control digital systems (operating, file, database…) based on the uniqueness of file names.
+- Need for unique photo names for eliminating of threat of loss or damage of photos themselves or information about them because of the same names in the environments of control digital systems (operating, file, database…) based on the uniqueness of file names.
 - Need for unified and clear naming order of individual subsets of photos for ensuring of productivity when shared using and maintaining of them.
 
 ## Direction of the solution
