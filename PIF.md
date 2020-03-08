@@ -168,4 +168,5 @@ xmp:label
 
 ## Обратная связь
 
+Андрей Коржиц  
 andreikorzhyts@gmail.com
