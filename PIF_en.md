@@ -1,12 +1,16 @@
 # Naming order of photos (PIF)
 
-Version 0.2.0
+Version 0.2.0^
 
 ***
 
 ## Abbreviation explanation
 
-**PIF** (Russian: **ПИФ** [pʲˈif]) — **П**орядок **И**менования **Ф**отографий.
+**PIF** (Russian: **ПИФ** [pif]) — **П**орядок **И**менования **Ф**отографий.
+
+## Copyright
+
+This Order is licensed under the Creative Commons Attribution 4.0 International License. To view a copy of this license, visit [http://creativecommons.org/licenses/by/4.0/](http://creativecommons.org/licenses/by/4.0/ "Creative Commons Attribution 4.0 International").
 
 ## Prerequisites
 
