@@ -8,7 +8,24 @@ Version 0.2.0^
 
 **PIF** (Russian: **ПИФ** [pif]) — **П**орядок **И**менования **Ф**отографий.
 
+## Terms
+
+**Order** (with a capital) — this document or the rules set forth in it, or both, depending on the context.
+
+## About this Order
+
+The original copy of the Order is set forth in Russian.
+
+This copy of the Order is set forth in English.
+
+When specifying the interpretation of the Order, the copy of the Order in Russian is priority.
+
+The Order is originally intended for naming of digital photos, but it approves its use in other appropriate cases.
+
 ## Copyright
+
+© A. P. Korzhyts, 2020  
+© E. V. Abrazhevich, translating into English, 2020  
 
 This Order is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit [http://creativecommons.org/licenses/by-sa/4.0/](http://creativecommons.org/licenses/by-sa/4.0/ "Creative Commons Attribution-ShareAlike 4.0 International").
 
@@ -33,7 +50,7 @@ Only values of following initial technical parameters are used:
 
 **date** — YYYYMMDD;  
 **time** — HHMMSS in the 24-hour notation;  
-**time zone** — fHHMM or bHHMM where **f** — forward, **b** — backward;  
+**time zone** — fHHMM or bHHMM, where **f** — forward, **b** — backward;  
 **camera model**;  
 **camera serial number**;  
 **frame designation** — simple designation, for example, original name, or composite designation, for example, composed of intracamera folder number and serial frame number;  
@@ -109,7 +126,7 @@ xmp:creatortool
 
 bodyserialnumber
 exifex:bodyserialnumber
-"163066096287"
+"163066096284"
 
 crs:rawfilename
 xmp:nickname
@@ -124,27 +141,27 @@ dc:identifier
 iptc4xmpext:digimagegui
 xmp:identifier
 xmp:label
-"20190721_002522_f0300_CanonEOS600D_163066096287_IMG9966_v2"
+"20190721_002522_f0300_CanonEOS600D_163066096284_IMG9966_v2"
 ```
 
 ### Naming with full compliance with the order
 
 ```
-20190721_002522_f0300_CanonEOS600D_163066096287_IMG9966.cr2
+20190721_002522_f0300_CanonEOS600D_163066096284_IMG9966.cr2
 
-20190721_002522_f0300_CanonEOS600D_163066096287_IMG9966_v2.psd
+20190721_002522_f0300_CanonEOS600D_163066096284_IMG9966_v2.psd
 
-20190721_002522_f0300_CanonEOS600D_163066096287_IMG9966_grayscale.jpg
+20190721_002522_f0300_CanonEOS600D_163066096284_IMG9966_grayscale.jpg
 ```
 
 ### Naming with custom digressions
 
 ```
-20190721_002522_IMG9966_f0300_CanonEOS600D_163066096287.cr2
+20190721_002522_IMG9966_f0300_CanonEOS600D_163066096284.cr2
 
-20190721_002522f0300_CanonEOS600D163066096287_IMG9966.cr2
+20190721_002522f0300_CanonEOS600D163066096284_IMG9966.cr2
 
-20190721_002522_IMG9966_CanonEOS600D163066096287.cr2
+20190721_002522_IMG9966_CanonEOS600D163066096284.cr2
 
 20190721_002522_IMG9966.cr2
 
@@ -153,8 +170,7 @@ xmp:label
 20190721_002522f0300_1009966.cr2
 ```
 
-***
+## Feedback
 
-© A. P. Korzhyts, 2019–2020  
-© E. V. Abrazhevich, translating into English, 2019–2020  
-gmail: andreikorzhyts
+Andrei Korzhyts
+andreikorzhyts@gmail.com
