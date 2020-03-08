@@ -165,3 +165,7 @@ xmp:label
 
 20190721_002522f0300_1009966.cr2
 ```
+
+## Обратная связь
+
+andreikorzhyts@gmail.com
