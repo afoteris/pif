@@ -48,19 +48,19 @@ The order aims to ensure the uniqueness of photo name on a global scale for any 
 
 Only values of following initial technical parameters are used:
 
-**date** — YYYYMMDD;  
-**time** — HHMMSS in the 24-hour notation;  
-**time zone** — fHHMM or bHHMM, where **f** — forward, **b** — backward;  
-**camera model**;  
-**camera serial number**;  
-**frame designation** — simple designation, for example, original name, or composite designation, for example, composed of intracamera folder number and serial frame number;  
-**addition** — simple addition, for example, version, purpose, or composite addition, for example, composed of color space and version. Recommended only for derivative files, if necessary.
+- **date** — YYYYMMDD;  
+- **time** — HHMMSS in the 24-hour notation;  
+- **time zone** — fHHMM or bHHMM, where **f** — forward, **b** — backward;  
+- **camera model**;  
+- **camera serial number**;  
+- **frame designation** — simple designation, for example, original name, or composite designation, for example, composed of intracamera folder number and serial frame number;  
+- **addition** — simple addition, for example, version, purpose, or composite addition, for example, composed of color space and version. Recommended only for derivative files, if necessary.
   
 Only the following symbols are used:
 
-**a-Z** (Latin);  
-**0-9** (Arabic numerals);  
-**_** (underscore) — only for visually separating of structure parts of photo name from each other; several underscores in a row are prohibited.
+- **a-Z** (Latin);  
+- **0-9** (Arabic numerals);  
+- **_** (underscore) — only for visually separating of structure parts of photo name from each other; several underscores in a row are prohibited.
 
 This allows to make photo names uniform and with distinguishable structure for visual perception, and also enables to simplify the writing of scripts using these names.
 
