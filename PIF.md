@@ -73,17 +73,31 @@
 ```
 exif:datetimeoriginal    | ДАТА_ВРЕМЯ_ЧАСОВОЙПОЯС | xmp
 xmp:createdate           | ДАТА_ВРЕМЯ_ЧАСОВОЙПОЯС | xmp
+```
+```
 datetimeoriginal         | ДАТА_ВРЕМЯ             | exif
+```
+```
 offsettimeoriginal       | ЧАСОВОЙПОЯС            | exif
+```
+```
 model                    | МОДЕЛЬКАМЕРЫ           | exif
 tiff:model               | МОДЕЛЬКАМЕРЫ           | xmp
 xmp:creatortool          | МОДЕЛЬКАМЕРЫ           | xmp
+```
+```
 bodyserialnumber         | СЕРИЙНЫЙНОМЕРКАМЕРЫ    | exif
 exifex:bodyserialnumber  | СЕРИЙНЫЙНОМЕРКАМЕРЫ    | xmp
+```
+```
 crs:rawfilename          | ОБОЗНАЧЕНИЕКАДРА       | xmp
 xmp:nickname             | ОБОЗНАЧЕНИЕКАДРА       | xmp
+```
+```
 usercomment              | ДОПОЛНЕНИЕ             | exif
 exif:usercomment         | ДОПОЛНЕНИЕ             | xmp
+```
+```
 dc:identifier            | Имя фотографии         | xmp
 iptc4xmpext:digimageguid | Имя фотографии         | xmp
 xmp:identifier           | Имя фотографии         | xmp
@@ -108,31 +122,38 @@ xmp:label                | Имя фотографии         | xmp
 exif:datetimeoriginal
 xmp:createdate
 "2019-07-21T00:25:22.00+03:00"
-
+```
+```
 datetimeoriginal
 "2019-07-21T00:25:22"
-
+```
+```
 offsettimeoriginal
 "+03:00"
-
+```
+```
 model
 tiff:model
 xmp:creatortool
 "Canon EOS 600D"
-
+```
+```
 bodyserialnumber
 exifex:bodyserialnumber
 "163066096284"
-
+```
+```
 crs:rawfilename
 xmp:nickname
 "_IMG_9966"
-
+```
+```
 usercomment
 exif:usercomment
 "v2"
 "grayscale"
-
+```
+```
 dc:identifier
 iptc4xmpext:digimageguid
 xmp:identifier
@@ -144,9 +165,11 @@ xmp:label
 
 ```
 20190721_002522_f0300_CanonEOS600D_163066096284_IMG9966.cr2
-
+```
+```
 20190721_002522_f0300_CanonEOS600D_163066096284_IMG9966_v2.psd
-
+```
+```
 20190721_002522_f0300_CanonEOS600D_163066096284_IMG9966_grayscale.jpg
 ```
 
@@ -154,15 +177,20 @@ xmp:label
 
 ```
 20190721_002522_IMG9966_f0300_CanonEOS600D_163066096284.cr2
-
+```
+```
 20190721_002522f0300_CanonEOS600D163066096284_IMG9966.cr2
-
+```
+```
 20190721_002522_IMG9966_CanonEOS600D163066096284.cr2
-
+```
+```
 20190721_002522_IMG9966.cr2
-
+```
+```
 20190721_002522_IMG9966_v2.jpg
-
+```
+```
 20190721_002522f0300_1009966.cr2
 ```
 
