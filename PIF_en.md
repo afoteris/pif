@@ -172,5 +172,4 @@ xmp:label
 
 ## Feedback
 
-Andrei Korzhyts  
-andreikorzhyts@gmail.com
+gmail: andreikorzhyts
