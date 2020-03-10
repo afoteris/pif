@@ -75,23 +75,23 @@ DATE_TIME_TIMEZONE_CAMERAMODEL_CAMERASERIALNUMBER_FRAMEDESIGNATION_ADDITION.EXTE
 ### Recommended metadata tags for storing name data
 
 ```
-exif:datetimeoriginal   | DATE_TIME_TIMEZONE | xmp
-xmp:createdate          | DATE_TIME_TIMEZONE | xmp
-datetimeoriginal        | DATE_TIME          | exif
-offsettimeoriginal      | TIMEZONE           | exif
-model                   | CAMERAMODEL        | exif
-tiff:model              | CAMERAMODEL        | xmp
-xmp:creatortool         | CAMERAMODEL        | xmp
-bodyserialnumber        | CAMERASERIALNUMBER | exif
-exifex:bodyserialnumber | CAMERASERIALNUMBER | xmp
-crs:rawfilename         | FRAMEDESIGNATION   | xmp
-xmp:nickname            | FRAMEDESIGNATION   | xmp
-usercomment             | ADDITION           | exif
-exif:usercomment        | ADDITION           | xmp
-dc:identifier           | Photo name         | xmp
-iptc4xmpext:digimagegui | Photo name         | xmp
-xmp:identifier          | Photo name         | xmp
-xmp:label               | Photo name         | xmp
+exif:datetimeoriginal    | DATE_TIME_TIMEZONE | xmp
+xmp:createdate           | DATE_TIME_TIMEZONE | xmp
+datetimeoriginal         | DATE_TIME          | exif
+offsettimeoriginal       | TIMEZONE           | exif
+model                    | CAMERAMODEL        | exif
+tiff:model               | CAMERAMODEL        | xmp
+xmp:creatortool          | CAMERAMODEL        | xmp
+bodyserialnumber         | CAMERASERIALNUMBER | exif
+exifex:bodyserialnumber  | CAMERASERIALNUMBER | xmp
+crs:rawfilename          | FRAMEDESIGNATION   | xmp
+xmp:nickname             | FRAMEDESIGNATION   | xmp
+usercomment              | ADDITION           | exif
+exif:usercomment         | ADDITION           | xmp
+dc:identifier            | Photo name         | xmp
+iptc4xmpext:digimageguid | Photo name         | xmp
+xmp:identifier           | Photo name         | xmp
+xmp:label                | Photo name         | xmp
 ```
 
 Tags belong to the following standards:
@@ -138,7 +138,7 @@ exif:usercomment
 "grayscale"
 
 dc:identifier
-iptc4xmpext:digimagegui
+iptc4xmpext:digimageguid
 xmp:identifier
 xmp:label
 "20190721_002522_f0300_CanonEOS600D_163066096284_IMG9966_v2"

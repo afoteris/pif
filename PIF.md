@@ -71,23 +71,23 @@
 ### Рекомендуемые теги метаданных для хранения данных имени
 
 ```
-exif:datetimeoriginal   | ДАТА_ВРЕМЯ_ЧАСОВОЙПОЯС | xmp
-xmp:createdate          | ДАТА_ВРЕМЯ_ЧАСОВОЙПОЯС | xmp
-datetimeoriginal        | ДАТА_ВРЕМЯ             | exif
-offsettimeoriginal      | ЧАСОВОЙПОЯС            | exif
-model                   | МОДЕЛЬКАМЕРЫ           | exif
-tiff:model              | МОДЕЛЬКАМЕРЫ           | xmp
-xmp:creatortool         | МОДЕЛЬКАМЕРЫ           | xmp
-bodyserialnumber        | СЕРИЙНЫЙНОМЕРКАМЕРЫ    | exif
-exifex:bodyserialnumber | СЕРИЙНЫЙНОМЕРКАМЕРЫ    | xmp
-crs:rawfilename         | ОБОЗНАЧЕНИЕКАДРА       | xmp
-xmp:nickname            | ОБОЗНАЧЕНИЕКАДРА       | xmp
-usercomment             | ДОПОЛНЕНИЕ             | exif
-exif:usercomment        | ДОПОЛНЕНИЕ             | xmp
-dc:identifier           | Имя фотографии         | xmp
-iptc4xmpext:digimagegui | Имя фотографии         | xmp
-xmp:identifier          | Имя фотографии         | xmp
-xmp:label               | Имя фотографии         | xmp
+exif:datetimeoriginal    | ДАТА_ВРЕМЯ_ЧАСОВОЙПОЯС | xmp
+xmp:createdate           | ДАТА_ВРЕМЯ_ЧАСОВОЙПОЯС | xmp
+datetimeoriginal         | ДАТА_ВРЕМЯ             | exif
+offsettimeoriginal       | ЧАСОВОЙПОЯС            | exif
+model                    | МОДЕЛЬКАМЕРЫ           | exif
+tiff:model               | МОДЕЛЬКАМЕРЫ           | xmp
+xmp:creatortool          | МОДЕЛЬКАМЕРЫ           | xmp
+bodyserialnumber         | СЕРИЙНЫЙНОМЕРКАМЕРЫ    | exif
+exifex:bodyserialnumber  | СЕРИЙНЫЙНОМЕРКАМЕРЫ    | xmp
+crs:rawfilename          | ОБОЗНАЧЕНИЕКАДРА       | xmp
+xmp:nickname             | ОБОЗНАЧЕНИЕКАДРА       | xmp
+usercomment              | ДОПОЛНЕНИЕ             | exif
+exif:usercomment         | ДОПОЛНЕНИЕ             | xmp
+dc:identifier            | Имя фотографии         | xmp
+iptc4xmpext:digimageguid | Имя фотографии         | xmp
+xmp:identifier           | Имя фотографии         | xmp
+xmp:label                | Имя фотографии         | xmp
 ```
 
 Теги принадлежат следующим стандартам:
@@ -134,7 +134,7 @@ exif:usercomment
 "grayscale"
 
 dc:identifier
-iptc4xmpext:digimagegui
+iptc4xmpext:digimageguid
 xmp:identifier
 xmp:label
 "20190721_002522_f0300_CanonEOS600D_163066096284_IMG9966_v2"
