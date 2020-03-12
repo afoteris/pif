@@ -7,5 +7,5 @@ copy("../vc_pif/PIF.md", "original/PIF.md");
 copy("../vc_pif/PIF_en.md", "original/PIF_en.md");
 
 # Создание HTML-версий содержимого оригиналов ПИФ.
-system("cmark -t html original/PIF.md > PIF_content.html");
-system("cmark -t html original/PIF_en.md > PIF_content_en.html");
+system("cmark -t html original/PIF.md > assembly_parts/PIF_content.html");
+system("cmark -t html original/PIF_en.md > assembly_parts/PIF_content_en.html");
