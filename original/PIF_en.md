@@ -1,6 +1,6 @@
 # Naming order of photos (PIF)
 
-Version 0.4.0
+Version 0.4.1 (2020-03-13)
 
 ***
 
@@ -12,9 +12,9 @@ Version 0.4.0
 
 **Order** (with a capital) — this document or the rules set forth in it, or both, depending on the context.
 
-**Russian** — language represented by **ru** code in ISO 639-1:2002.
+**Russian** — language represented by *ru* code in *ISO 639-1:2002*.
 
-**English** — language represented by **en** code in ISO 639-1:2002.
+**English** — language represented by *en* code in *ISO 639-1:2002*.
 
 ## About this Order
 
@@ -33,7 +33,7 @@ The Order is originally intended for naming of digital photos, but it approves i
 © A. P. Korzhyts, 2020  
 © E. V. Abrazhevich, translating into English, 2020  
 
-This Order is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit [http://creativecommons.org/licenses/by-sa/4.0/](http://creativecommons.org/licenses/by-sa/4.0/ "Creative Commons Attribution-ShareAlike 4.0 International").
+This Order is licensed under the *Creative Commons Attribution-ShareAlike 4.0 International* license. To view a copy of this license, visit [http://creativecommons.org/licenses/by-sa/4.0/](http://creativecommons.org/licenses/by-sa/4.0/ "Creative Commons Attribution-ShareAlike 4.0 International").
 
 ## Prerequisites
 
@@ -56,7 +56,7 @@ Only values of following initial technical parameters are used:
 
 - **date** — YYYYMMDD;  
 - **time** — HHMMSS in the 24-hour notation;  
-- **time zone** — fHHMM or bHHMM, where **f** — forward, **b** — backward;  
+- **time zone** — fHHMM or bHHMM, where *f* — forward, *b* — backward;  
 - **camera model**;  
 - **camera serial number**;  
 - **frame designation** — simple designation, for example, original name, or composite designation, for example, composed of intracamera folder number and serial frame number;  
