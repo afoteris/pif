@@ -1,6 +1,7 @@
 # Порядок именования фотографий (ПИФ)
 
-Версия 0.4.1 (2020-03-13)
+Версия 0.4.2  
+2020-03-14
 
 ***
 
@@ -127,44 +128,52 @@ xmp:label                | Имя фотографии         | xmp
 ```
 exif:datetimeoriginal
 xmp:createdate
-"2019-07-21T00:25:22.00+03:00"
+----------------------------
+2019-07-21T00:25:22.00+03:00
 ```
 ```
 datetimeoriginal
-"2019-07-21T00:25:22"
+-------------------
+2019-07-21T00:25:22
 ```
 ```
 offsettimeoriginal
-"+03:00"
+------
++03:00
 ```
 ```
 model
 tiff:model
 xmp:creatortool
-"Canon EOS 600D"
+--------------
+Canon EOS 600D
 ```
 ```
 bodyserialnumber
 exifex:bodyserialnumber
-"163066096284"
+------------
+163066096284
 ```
 ```
 crs:rawfilename
 xmp:nickname
-"_IMG_9966"
+---------
+_IMG_9966
 ```
 ```
 usercomment
 exif:usercomment
-"v2"
-"grayscale"
+---------
+v2
+grayscale
 ```
 ```
 dc:identifier
 iptc4xmpext:digimageguid
 xmp:identifier
 xmp:label
-"20190721_002522_f0300_CanonEOS600D_163066096284_IMG9966_v2"
+----------------------------------------------------------
+20190721_002522_f0300_CanonEOS600D_163066096284_IMG9966_v2
 ```
 
 ### Именование с полным соответствием Порядку
