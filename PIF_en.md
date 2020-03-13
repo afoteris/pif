@@ -33,7 +33,7 @@ The Order is originally intended for naming of digital photos, but it approves i
 © A. P. Korzhyts, 2020  
 © E. V. Abrazhevich, translating into English, 2020  
 
-This Order is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit [http://creativecommons.org/licenses/by-sa/4.0/](http://creativecommons.org/licenses/by-sa/4.0/ "Creative Commons Attribution-ShareAlike 4.0 International").
+This Order is licensed under the **Creative Commons Attribution-ShareAlike 4.0 International** License. To view a copy of this license, visit [http://creativecommons.org/licenses/by-sa/4.0/](http://creativecommons.org/licenses/by-sa/4.0/ "Creative Commons Attribution-ShareAlike 4.0 International").
 
 ## Prerequisites
 

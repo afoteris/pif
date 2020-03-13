@@ -29,7 +29,7 @@
 © А. П. Коржиц, 2020  
 © Е. В. Абражевич, перевод на английский язык, 2020
 
-Настоящий Порядок лицензирован под лицензией Creative Commons Attribution-ShareAlike 4.0 International. Чтобы просмотреть копию этой лицензии, посетите [http://creativecommons.org/licenses/by-sa/4.0/](http://creativecommons.org/licenses/by-sa/4.0/ "Creative Commons Attribution-ShareAlike 4.0 International").
+Настоящий Порядок лицензирован под лицензией **Creative Commons Attribution-ShareAlike 4.0 International**. Чтобы просмотреть копию этой лицензии, посетите [http://creativecommons.org/licenses/by-sa/4.0/](http://creativecommons.org/licenses/by-sa/4.0/ "Creative Commons Attribution-ShareAlike 4.0 International").
 
 ## Предпосылки
 
