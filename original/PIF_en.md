@@ -1,6 +1,6 @@
 # Naming order of photos (PIF)
 
-Version 0.3.0
+Version 0.4.0
 
 ***
 
@@ -12,7 +12,13 @@ Version 0.3.0
 
 **Order** (with a capital) — this document or the rules set forth in it, or both, depending on the context.
 
+**Russian** — language represented by **ru** code in ISO 639-1:2002.
+
+**English** — language represented by **en** code in ISO 639-1:2002.
+
 ## About this Order
+
+The Order is officially supported in Russian and English only.
 
 The original copy of the Order is set forth in Russian.
 
@@ -31,7 +37,7 @@ This Order is licensed under the Creative Commons Attribution-ShareAlike 4.0 Int
 
 ## Prerequisites
 
-- Need for unique photo names for eliminating of threat of loss or damage of photos themselves or information about them because of the same names in the environments of control digital systems (operating, file, database…) based on the uniqueness of file names.
+- Need for unique photo names for eliminating of threat of loss or damage of photos themselves or information about them because of the same names in the environments of digital control systems (operating, file, database…) based on the uniqueness of file names.
 - Need for unified and clear naming order of individual subsets of photos for ensuring of productivity when shared using and maintaining of them.
 
 ## Direction of the solution
@@ -42,29 +48,29 @@ Only initial technical parameters for all in its essence are constant, clear and
 
 ## Solution
 
-The order is based on chronology, because it is inherent in everything, strictly linear, and therefore unambiguous and clear. But chronology is not able to ensure the uniqueness of photo name independently, therefore it is used in combination with other initial technical parameters.
+The Order is based on chronology, because it is inherent in everything, strictly linear, and therefore unambiguous and clear. But chronology is not able to ensure the uniqueness of photo name independently, therefore it is used in combination with other initial technical parameters.
 
-The order aims to ensure the uniqueness of photo name on a global scale for any shooting parameters, if reliable values of parameters are used for composing of photo name.
+The Order aims to ensure the uniqueness of photo name on a global scale for any shooting parameters, if reliable values of parameters are used for composing of photo name.
 
 Only values of following initial technical parameters are used:
 
-**date** — YYYYMMDD;  
-**time** — HHMMSS in the 24-hour notation;  
-**time zone** — fHHMM or bHHMM, where **f** — forward, **b** — backward;  
-**camera model**;  
-**camera serial number**;  
-**frame designation** — simple designation, for example, original name, or composite designation, for example, composed of intracamera folder number and serial frame number;  
-**addition** — simple addition, for example, version, purpose, or composite addition, for example, composed of color space and version. Recommended only for derivative files, if necessary.
+- **date** — YYYYMMDD;  
+- **time** — HHMMSS in the 24-hour notation;  
+- **time zone** — fHHMM or bHHMM, where **f** — forward, **b** — backward;  
+- **camera model**;  
+- **camera serial number**;  
+- **frame designation** — simple designation, for example, original name, or composite designation, for example, composed of intracamera folder number and serial frame number;  
+- **addition** — simple addition, for example, version, purpose, or composite addition, for example, composed of color space and version. Recommended only for derivative files, if necessary.
   
 Only the following symbols are used:
 
-**a-Z** (Latin);  
-**0-9** (Arabic numerals);  
-**_** (underscore) — only for visually separating of structure parts of photo name from each other; several underscores in a row are prohibited.
+- **a-Z** (Latin);  
+- **0-9** (Arabic numerals);  
+- **_** (underscore) — only for visually separating of structure parts of photo name from each other; several underscores in a row are prohibited.
 
 This allows to make photo names uniform and with distinguishable structure for visual perception, and also enables to simplify the writing of scripts using these names.
 
-At desire, digressions from strict adherence to the order are permissible under user's personal responsibility.
+At desire, digressions from strict adherence to the Order are permissible under user's personal responsibility.
 
 ### Sample of naming scheme
 
@@ -75,23 +81,37 @@ DATE_TIME_TIMEZONE_CAMERAMODEL_CAMERASERIALNUMBER_FRAMEDESIGNATION_ADDITION.EXTE
 ### Recommended metadata tags for storing name data
 
 ```
-exif:datetimeoriginal   | DATE_TIME_TIMEZONE | xmp
-xmp:createdate          | DATE_TIME_TIMEZONE | xmp
-datetimeoriginal        | DATE_TIME          | exif
-offsettimeoriginal      | TIMEZONE           | exif
-model                   | CAMERAMODEL        | exif
-tiff:model              | CAMERAMODEL        | xmp
-xmp:creatortool         | CAMERAMODEL        | xmp
-bodyserialnumber        | CAMERASERIALNUMBER | exif
-exifex:bodyserialnumber | CAMERASERIALNUMBER | xmp
-crs:rawfilename         | FRAMEDESIGNATION   | xmp
-xmp:nickname            | FRAMEDESIGNATION   | xmp
-usercomment             | ADDITION           | exif
-exif:usercomment        | ADDITION           | xmp
-dc:identifier           | Photo name         | xmp
-iptc4xmpext:digimagegui | Photo name         | xmp
-xmp:identifier          | Photo name         | xmp
-xmp:label               | Photo name         | xmp
+exif:datetimeoriginal    | DATE_TIME_TIMEZONE | xmp
+xmp:createdate           | DATE_TIME_TIMEZONE | xmp
+```
+```
+datetimeoriginal         | DATE_TIME          | exif
+```
+```
+offsettimeoriginal       | TIMEZONE           | exif
+```
+```
+model                    | CAMERAMODEL        | exif
+tiff:model               | CAMERAMODEL        | xmp
+xmp:creatortool          | CAMERAMODEL        | xmp
+```
+```
+bodyserialnumber         | CAMERASERIALNUMBER | exif
+exifex:bodyserialnumber  | CAMERASERIALNUMBER | xmp
+```
+```
+crs:rawfilename          | FRAMEDESIGNATION   | xmp
+xmp:nickname             | FRAMEDESIGNATION   | xmp
+```
+```
+usercomment              | ADDITION           | exif
+exif:usercomment         | ADDITION           | xmp
+```
+```
+dc:identifier            | Photo name         | xmp
+iptc4xmpext:digimageguid | Photo name         | xmp
+xmp:identifier           | Photo name         | xmp
+xmp:label                | Photo name         | xmp
 ```
 
 Tags belong to the following standards:
@@ -112,45 +132,54 @@ If necessary, using of other well-known tags is available, for example, for addi
 exif:datetimeoriginal
 xmp:createdate
 "2019-07-21T00:25:22.00+03:00"
-
+```
+```
 datetimeoriginal
 "2019-07-21T00:25:22"
-
+```
+```
 offsettimeoriginal
 "+03:00"
-
+```
+```
 model
 tiff:model
 xmp:creatortool
 "Canon EOS 600D"
-
+```
+```
 bodyserialnumber
 exifex:bodyserialnumber
 "163066096284"
-
+```
+```
 crs:rawfilename
 xmp:nickname
 "_IMG_9966"
-
+```
+```
 usercomment
 exif:usercomment
 "v2"
 "grayscale"
-
+```
+```
 dc:identifier
-iptc4xmpext:digimagegui
+iptc4xmpext:digimageguid
 xmp:identifier
 xmp:label
 "20190721_002522_f0300_CanonEOS600D_163066096284_IMG9966_v2"
 ```
 
-### Naming with full compliance with the order
+### Naming with full compliance with the Order
 
 ```
 20190721_002522_f0300_CanonEOS600D_163066096284_IMG9966.cr2
-
+```
+```
 20190721_002522_f0300_CanonEOS600D_163066096284_IMG9966_v2.psd
-
+```
+```
 20190721_002522_f0300_CanonEOS600D_163066096284_IMG9966_grayscale.jpg
 ```
 
@@ -158,19 +187,23 @@ xmp:label
 
 ```
 20190721_002522_IMG9966_f0300_CanonEOS600D_163066096284.cr2
-
+```
+```
 20190721_002522f0300_CanonEOS600D163066096284_IMG9966.cr2
-
+```
+```
 20190721_002522_IMG9966_CanonEOS600D163066096284.cr2
-
+```
+```
 20190721_002522_IMG9966.cr2
-
+```
+```
 20190721_002522_IMG9966_v2.jpg
-
+```
+```
 20190721_002522f0300_1009966.cr2
 ```
 
 ## Feedback
 
-Andrei Korzhyts  
-andreikorzhyts@gmail.com
+gmail: andreikorzhyts
