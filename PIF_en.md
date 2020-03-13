@@ -85,27 +85,27 @@ exif:datetimeoriginal    | DATE_TIME_TIMEZONE | xmp
 xmp:createdate           | DATE_TIME_TIMEZONE | xmp
 ```
 ```
-datetimeoriginal         | DATE_TIME           | exif
+datetimeoriginal         | DATE_TIME          | exif
 ```
 ```
-offsettimeoriginal       | TIMEZONE            | exif
+offsettimeoriginal       | TIMEZONE           | exif
 ```
 ```
-model                    | CAMERAMODEL         | exif
-tiff:model               | CAMERAMODEL         | xmp
-xmp:creatortool          | CAMERAMODEL         | xmp
+model                    | CAMERAMODEL        | exif
+tiff:model               | CAMERAMODEL        | xmp
+xmp:creatortool          | CAMERAMODEL        | xmp
 ```
 ```
-bodyserialnumber         | CAMERASERIALNUMBER  | exif
-exifex:bodyserialnumber  | CAMERASERIALNUMBER  | xmp
+bodyserialnumber         | CAMERASERIALNUMBER | exif
+exifex:bodyserialnumber  | CAMERASERIALNUMBER | xmp
 ```
 ```
-crs:rawfilename          | FRAMEDESIGNATION    | xmp
-xmp:nickname             | FRAMEDESIGNATION    | xmp
+crs:rawfilename          | FRAMEDESIGNATION   | xmp
+xmp:nickname             | FRAMEDESIGNATION   | xmp
 ```
 ```
-usercomment              | ADDITION            | exif
-exif:usercomment         | ADDITION            | xmp
+usercomment              | ADDITION           | exif
+exif:usercomment         | ADDITION           | xmp
 ```
 ```
 dc:identifier            | Photo name         | xmp
