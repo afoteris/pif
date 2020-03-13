@@ -12,9 +12,9 @@ Version 0.4.0
 
 **Order** (with a capital) — this document or the rules set forth in it, or both, depending on the context.
 
-**Russian** — language represented by **ru** code in ISO 639-1:2002.
+**Russian** — language represented by **ru** code in **ISO 639-1:2002**.
 
-**English** — language represented by **en** code in ISO 639-1:2002.
+**English** — language represented by **en** code in **ISO 639-1:2002**.
 
 ## About this Order
 
