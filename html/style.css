@@ -9,6 +9,7 @@ body {
     max-width: 800px;
     color: #242424;
     font-family: 'Open Sans', sans-serif;
+    background-color: #fafafa;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -27,18 +28,22 @@ ul {
 }
 
 pre {
-    font-family: 'Roboto Mono', monospace;
-    background-color: #fbfbff;
+    background-color: #ffffff;
     margin: 1em 0;
     padding: 4px 8px;
+    color: #ff8800;
+}
+
+code {
+    font-family: 'Roboto Mono', monospace;
 }
 
 a {
-    color: #0000ff;
+    color: #0088ff;
 }
 
 a:hover {
-    color: #8a2be2;
+    color: #8888ff;
 }
 
 hr {
