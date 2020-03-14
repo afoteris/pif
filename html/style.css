@@ -1,3 +1,21 @@
+/*
+Style Sheet
+
+CSS level 3
+
+Table of content
+
+    General
+    Typography
+    Colors
+*/
+
+/*
+ * ----------------------------------------------------------------
+ * General
+ * ----------------------------------------------------------------
+ */
+
 body {
     max-width: 800px;
     margin: 32px auto 96px;
