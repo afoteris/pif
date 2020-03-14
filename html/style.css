@@ -16,6 +16,9 @@ Table of content
  * ----------------------------------------------------------------
  */
 
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=PT+Mono&display=swap&subset=cyrillic');
+
 body {
     max-width: 800px;
     margin: 32px auto 96px;
@@ -47,11 +50,13 @@ li {
 pre {
     margin: 0.41em 0;
     padding: 8px 12px;
+    border: 1px solid;
 }
 
 hr {
     margin-top: 1.953em;
     margin-bottom: 1.953em;
+    border: 1px solid;
 }
 
 .lang {
@@ -66,18 +71,12 @@ hr {
  */
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'PT Sans', sans-serif;
     font-size: 20px;
-    font-weight: lighter;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-weight: bold;
 }
 
 code {
-    font-family: 'Courier New', monospace;
-    font-weight: bolder;
+    font-family: 'PT Mono', monospace;
 }
 
 /*
@@ -88,12 +87,11 @@ code {
 
 body {
     color: #242424;
-    background-color: #fafafa;
 }
 
 pre {
-    color: #484848;
-    background-color: #ffffff;
+    color: #323232;
+    border-color: #dfdfdf;
 }
 
 a {
@@ -105,5 +103,5 @@ a:hover {
 }
 
 hr {
-    color: #dddddd;
+    color: #dfdfdf;
 }
