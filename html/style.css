@@ -94,8 +94,8 @@ body {
 }
 
 pre {
-    color: #323232;
-    border-color: #dfdfdf;
+    border-color: #eaeaea;
+    background-color: #fafafa;
 }
 
 a {
@@ -107,5 +107,5 @@ a:hover {
 }
 
 hr {
-    color: #dfdfdf;
+    border-color: #eaeaea;
 }
