@@ -1,21 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:700&display=swap&subset=cyrillic');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap&subset=cyrillic');
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap&subset=cyrillic');
-
 body {
+    max-width: 800px;
     margin: 32px auto 96px;
     padding: 0 12px;
-    font-size: 20px;
-    max-width: 800px;
-    color: #242424;
-    font-family: 'Open Sans', sans-serif;
-    background-color: #fafafa;
 }
 
 h1, h2, h3, h4, h5, h6 {
     margin-top: 1.563em;
     margin-bottom: 1.25em;
-    font-family: 'Roboto Slab', serif;
 }
 
 p {
@@ -32,14 +23,55 @@ li {
 }
 
 pre {
-    background-color: #ffffff;
     margin: 0.41em 0;
     padding: 8px 12px;
-    color: #ff8800;
+}
+
+hr {
+    margin-top: 1.953em;
+    margin-bottom: 1.953em;
+}
+
+.lang {
+    text-align: right;
+    margin: 0 auto;
+}
+
+/*
+ * ----------------------------------------------------------------
+ * Typography
+ * ----------------------------------------------------------------
+ */
+
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
 }
 
 code {
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Courier New', monospace;
+    font-weight: bolder;
+}
+
+/*
+ * ----------------------------------------------------------------
+ * Colors
+ * ----------------------------------------------------------------
+ */
+
+body {
+    color: #242424;
+    background-color: #fafafa;
+}
+
+pre {
+    color: #ff8800;
+    background-color: #ffffff;
 }
 
 a {
@@ -51,13 +83,5 @@ a:hover {
 }
 
 hr {
-    margin-top: 1.953em;
-    margin-bottom: 1.953em;
     color: #dddddd;
-}
-
-.lang {
-    margin: 0 auto;
-    max-width: 800px;
-    text-align: right;
 }
