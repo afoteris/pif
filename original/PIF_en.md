@@ -1,7 +1,7 @@
 # Naming order of photos (PIF)
 
-Version 0.4.2  
-2020-03-14
+Version 0.4.3  
+2020-03-28
 
 ***
 
@@ -161,8 +161,8 @@ exifex:bodyserialnumber
 ```
 crs:rawfilename
 xmp:nickname
----------
-_IMG_9966
+-------------
+_IMG_9966.CR2
 ```
 ```
 usercomment
