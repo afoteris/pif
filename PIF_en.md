@@ -161,8 +161,8 @@ exifex:bodyserialnumber
 ```
 crs:rawfilename
 xmp:nickname
----------
-_IMG_9966
+-------------
+_IMG_9966.CR2
 ```
 ```
 usercomment
