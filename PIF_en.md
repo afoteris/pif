@@ -67,7 +67,7 @@ Only the following symbols are used:
 
 - **a-Z** (Latin);  
 - **0-9** (Arabic numerals);  
-- **_** (underscore) — only for visually separating of structure parts of photo name from each other; several underscores in a row are prohibited.
+- **_** (underscore) — for visually separating of structure parts of photo name from each other.
 
 This allows to make photo names uniform and with distinguishable structure for visual perception, and also enables to simplify the writing of scripts using these names.
 
