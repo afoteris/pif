@@ -21,56 +21,50 @@ system("cmark -t html original/PIF_en.md > assembly_parts/PIF_content_en.html");
 
 my $fh;
 my $path_PIF_framework        = 'assembly_parts/PIF_framework.html';
-my $PIF_framework;
+my $PIF_framework             = '';
 my $path_PIF_head_integration = 'assembly_parts/PIF_head_integration.html';
-my $PIF_head_integration;
+my $PIF_head_integration      = '';
 my $path_PIF_link_to_ru       = 'assembly_parts/PIF_link_to_ru.html';
-my $PIF_link_to_ru;
+my $PIF_link_to_ru            = '';
 my $path_PIF_link_to_en       = 'assembly_parts/PIF_link_to_en.html';
-my $PIF_link_to_en;
+my $PIF_link_to_en            = '';
 my $path_PIF_content          = 'assembly_parts/PIF_content.html';
-my $PIF_content;
+my $PIF_content               = '';
 my $path_PIF_content_en       = 'assembly_parts/PIF_content_en.html';
-my $PIF_content_en;
+my $PIF_content_en            = '';
 my $PIF;
 my $PIF_en;
 
-$PIF_framework = '';
 open $fh, '<', $path_PIF_framework or die $!;
 while (<$fh>) {
     $PIF_framework .= $_;
 }
 close $fh;
 
-$PIF_head_integration = '';
 open $fh, '<', $path_PIF_head_integration or die $!;
 while (<$fh>) {
     $PIF_head_integration .= $_;
 }
 close $fh;
 
-$PIF_link_to_ru = '';
 open $fh, '<', $path_PIF_link_to_ru or die $!;
 while (<$fh>) {
     $PIF_link_to_ru .= $_;
 }
 close $fh;
 
-$PIF_link_to_en = '';
 open $fh, '<', $path_PIF_link_to_en or die $!;
 while (<$fh>) {
     $PIF_link_to_en .= $_;
 }
 close $fh;
 
-$PIF_content = '';
 open $fh, '<', $path_PIF_content or die $!;
 while (<$fh>) {
     $PIF_content .= $_;
 }
 close $fh;
 
-$PIF_content_en = '';
 open $fh, '<', $path_PIF_content_en or die $!;
 while (<$fh>) {
     $PIF_content_en .= $_;
