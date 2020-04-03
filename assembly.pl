@@ -105,4 +105,7 @@ print $fh $PIF_en;
 close $fh;
 print "File was assembled: html/PIF_en.html\n";
 
+
+# Готово!
+
 print "Done!";
