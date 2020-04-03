@@ -4,6 +4,12 @@ use utf8;
 use open qw(:std :utf8);
 use File::Copy;
 
+print "----\n";
+print "Perl $]\n";
+print "$0\n";
+print "----\n";
+print "Assembly started!\n";
+
 
 # Копирование оригиналов ПИФ из их репозитория.
 
@@ -83,7 +89,7 @@ $PIF =~ s/%content%/$PIF_content/;
 open($fh, '>', 'html/PIF.html');
 print $fh $PIF;
 close $fh;
-print "File was assembled: html/PIF.html\n";
+print "  Done: html/PIF.html\n";
 
 
 # Сборка версии ПИФ на английском.
@@ -97,9 +103,9 @@ $PIF_en =~ s/%content%/$PIF_content_en/;
 open($fh, '>', 'html/PIF_en.html');
 print $fh $PIF_en;
 close $fh;
-print "File was assembled: html/PIF_en.html\n";
+print "  Done: html/PIF_en.html\n";
 
 
 # Готово!
 
-print "Done!";
+print "Assembly completed!";
