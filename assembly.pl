@@ -78,6 +78,10 @@ $PIF =~ s/%head_integration%/$PIF_head_integration/;
 $PIF =~ s/%head_title%/Порядок именования фотографий (ПИФ)/;
 $PIF =~ s/%link_to_other_language%/$PIF_link_to_en/;
 $PIF =~ s/%content%/$PIF_content/;
+open($fh, '>', 'html/PIF.html');
+print $fh $PIF;
+close $fh;
+print "File was assembled: html/PIF.html\n";
 
 # Сборка версии ПИФ на английском.
 $PIF_en = $PIF_framework;
@@ -86,3 +90,9 @@ $PIF_en =~ s/%head_integration%/$PIF_head_integration/;
 $PIF_en =~ s/%head_title%/Naming order of photos (PIF)/;
 $PIF_en =~ s/%link_to_other_language%/$PIF_link_to_ru/;
 $PIF_en =~ s/%content%/$PIF_content_en/;
+open($fh, '>', 'html/PIF_en.html');
+print $fh $PIF_en;
+close $fh;
+print "File was assembled: html/PIF_en.html\n";
+
+print "Done!";
