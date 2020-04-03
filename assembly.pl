@@ -89,7 +89,7 @@ $PIF =~ s/%content%/$PIF_content/;
 open($fh, '>', 'html/PIF.html');
 print $fh $PIF;
 close $fh;
-print "  Done: html/PIF.html\n";
+print "+ html/PIF.html\n";
 
 
 # Сборка версии ПИФ на английском.
@@ -103,7 +103,7 @@ $PIF_en =~ s/%content%/$PIF_content_en/;
 open($fh, '>', 'html/PIF_en.html');
 print $fh $PIF_en;
 close $fh;
-print "  Done: html/PIF_en.html\n";
+print "+ html/PIF_en.html\n";
 
 
 # Готово!
