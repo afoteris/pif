@@ -34,31 +34,42 @@ open $fh, '<', $path_PIF_framework or die $!;
 while (<$fh>) {
     $PIF_framework .= $_;
 }
+close $fh;
+
 $PIF_head_integration = '';
 open $fh, '<', $path_PIF_head_integration or die $!;
 while (<$fh>) {
     $PIF_head_integration .= $_;
 }
+close $fh;
+
 $PIF_link_to_ru = '';
 open $fh, '<', $path_PIF_link_to_ru or die $!;
 while (<$fh>) {
     $PIF_link_to_ru .= $_;
 }
+close $fh;
+
 $PIF_link_to_en = '';
 open $fh, '<', $path_PIF_link_to_en or die $!;
 while (<$fh>) {
     $PIF_link_to_en .= $_;
 }
+close $fh;
+
 $PIF_content = '';
 open $fh, '<', $path_PIF_content or die $!;
 while (<$fh>) {
     $PIF_content .= $_;
 }
+close $fh;
+
 $PIF_content_en = '';
 open $fh, '<', $path_PIF_content_en or die $!;
 while (<$fh>) {
     $PIF_content_en .= $_;
 }
+close $fh;
 
 # Сборка версии ПИФ на русском.
 $PIF = $PIF_framework;
