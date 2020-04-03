@@ -4,15 +4,21 @@ use utf8;
 use open qw(:std :utf8);
 use File::Copy;
 
+
 # Копирование оригиналов ПИФ из их репозитория.
+
 copy("../vc_pif/PIF.md", "original/PIF.md");
 copy("../vc_pif/PIF_en.md", "original/PIF_en.md");
 
+
 # Создание HTML-версий содержимого оригиналов ПИФ.
+
 system("cmark -t html original/PIF.md > assembly_parts/PIF_content.html");
 system("cmark -t html original/PIF_en.md > assembly_parts/PIF_content_en.html");
 
+
 # Переменные для сборки сайта ПИФ.
+
 my $fh;
 my $path_PIF_framework        = 'assembly_parts/PIF_framework.html';
 my $PIF_framework;
@@ -71,7 +77,9 @@ while (<$fh>) {
 }
 close $fh;
 
+
 # Сборка версии ПИФ на русском.
+
 $PIF = $PIF_framework;
 $PIF =~ s/%html_language%/ru/;
 $PIF =~ s/%head_integration%/$PIF_head_integration/;
@@ -83,7 +91,9 @@ print $fh $PIF;
 close $fh;
 print "File was assembled: html/PIF.html\n";
 
+
 # Сборка версии ПИФ на английском.
+
 $PIF_en = $PIF_framework;
 $PIF_en =~ s/%html_language%/en/;
 $PIF_en =~ s/%head_integration%/$PIF_head_integration/;
