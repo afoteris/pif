@@ -13,8 +13,8 @@ print "Assembly started!\n";
 
 # Создание HTML-версий содержимого оригиналов ПИФ.
 
-system("cmark -t html pif/PIF.md > assembly_parts/PIF_content.html");
-system("cmark -t html pif/PIF_en.md > assembly_parts/PIF_content_en.html");
+system("cmark -t html md/PIF.md > assembly_parts/PIF_content.html");
+system("cmark -t html md/PIF_en.md > assembly_parts/PIF_content_en.html");
 
 
 # Переменные для сборки сайта ПИФ.
