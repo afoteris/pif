@@ -1,0 +1,111 @@
+/*
+Style Sheet
+
+CSS level 3
+
+Table of content
+
+    General
+    Typography
+    Colors
+*/
+
+/*
+ * ----------------------------------------------------------------
+ * General
+ * ----------------------------------------------------------------
+ */
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=PT+Mono&display=swap&subset=cyrillic');
+
+body {
+    max-width: 800px;
+    margin: 32px auto 96px;
+    padding: 0 12px;
+}
+
+h1 {
+    margin-top: 0.64em;
+}
+
+h2, h3, h4, h5, h6 {
+    margin-top: 1.563em;
+    margin-bottom: 1.25em;
+}
+
+p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    padding-left: 1.25em;
+}
+
+li {
+    margin-bottom: 0.262em;
+}
+
+pre {
+    margin: 0.41em 0;
+    padding: 8px 12px;
+    border: 1px solid;
+    border-radius: 4px;
+}
+
+hr {
+    margin-top: 1.953em;
+    margin-bottom: 1.953em;
+    border: 1px solid;
+}
+
+.lang {
+    text-align: right;
+    margin: 0 auto;
+}
+
+/*
+ * ----------------------------------------------------------------
+ * Typography
+ * ----------------------------------------------------------------
+ */
+
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+
+code {
+    font-family: 'PT Mono', monospace;
+}
+
+/*
+ * ----------------------------------------------------------------
+ * Colors
+ * ----------------------------------------------------------------
+ */
+
+body {
+    color: #242424;
+}
+
+pre {
+    border-color: #eaeaea;
+    background-color: #fafafa;
+}
+
+a {
+    color: #0088ff;
+}
+
+a:hover {
+    color: #242424;
+}
+
+hr {
+    border-color: #eaeaea;
+}
