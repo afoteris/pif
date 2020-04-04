@@ -2,7 +2,7 @@ use strict;
 use warnings;
 use utf8;
 use open qw(:std :utf8);
-use File::Copy;
+
 
 print "----\n";
 print "Perl $]\n";
@@ -11,16 +11,10 @@ print "----\n";
 print "Assembly started!\n";
 
 
-# Копирование оригиналов ПИФ из их репозитория.
-
-copy("../vc_pif/PIF.md", "original/PIF.md");
-copy("../vc_pif/PIF_en.md", "original/PIF_en.md");
-
-
 # Создание HTML-версий содержимого оригиналов ПИФ.
 
-system("cmark -t html original/PIF.md > assembly_parts/PIF_content.html");
-system("cmark -t html original/PIF_en.md > assembly_parts/PIF_content_en.html");
+system("cmark -t html pif/PIF.md > assembly_parts/PIF_content.html");
+system("cmark -t html pif/PIF_en.md > assembly_parts/PIF_content_en.html");
 
 
 # Переменные для сборки сайта ПИФ.
