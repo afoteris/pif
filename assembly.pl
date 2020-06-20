@@ -32,6 +32,10 @@ my $path_PIF_content          = 'assembly_parts/PIF_content.html';
 my $PIF_content               = '';
 my $path_PIF_content_en       = 'assembly_parts/PIF_content_en.html';
 my $PIF_content_en            = '';
+my $path_PIF_feedback         = 'assembly_parts/PIF_feedback.html';
+my $PIF_feedback              = '';
+my $path_PIF_feedback_en      = 'assembly_parts/PIF_feedback_en.html';
+my $PIF_feedback_en           = '';
 my $PIF;
 my $PIF_en;
 
@@ -71,6 +75,18 @@ while (<$fh>) {
 }
 close $fh;
 
+open $fh, '<', $path_PIF_feedback or die $!;
+while (<$fh>) {
+    $PIF_feedback .= $_;
+}
+close $fh;
+
+open $fh, '<', $path_PIF_feedback_en or die $!;
+while (<$fh>) {
+    $PIF_feedback_en .= $_;
+}
+close $fh;
+
 
 # Сборка версии ПИФ на русском.
 
@@ -80,6 +96,7 @@ $PIF =~ s/%head_integration%/$PIF_head_integration/;
 $PIF =~ s/%head_title%/Порядок именования фотографий (ПИФ)/;
 $PIF =~ s/%link_to_other_language%/$PIF_link_to_en/;
 $PIF =~ s/%content%/$PIF_content/;
+$PIF =~ s/%feedback%/$PIF_feedback/;
 open $fh, '>', 'html/PIF.html' or die $!;
 print $fh $PIF;
 close $fh;
@@ -94,6 +111,7 @@ $PIF_en =~ s/%head_integration%/$PIF_head_integration/;
 $PIF_en =~ s/%head_title%/Naming order of photos (PIF)/;
 $PIF_en =~ s/%link_to_other_language%/$PIF_link_to_ru/;
 $PIF_en =~ s/%content%/$PIF_content_en/;
+$PIF_en =~ s/%feedback%/$PIF_feedback_en/;
 open $fh, '>', 'html/PIF_en.html' or die $!;
 print $fh $PIF_en;
 close $fh;
