@@ -213,4 +213,4 @@ xmp:label
 
 ## Обратная связь
 
-gmail: andreikorzhyts
+contact@afoteris.com

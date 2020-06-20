@@ -217,4 +217,4 @@ xmp:label
 
 ## Feedback
 
-gmail: andreikorzhyts
+contact@afoteris.com
