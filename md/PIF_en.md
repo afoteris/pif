@@ -214,7 +214,3 @@ xmp:label
 ```
 20190721_002522f0300_1009966.CR2
 ```
-
-## Feedback
-
-contact@afoteris.com
