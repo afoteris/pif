@@ -160,7 +160,7 @@ exifex:bodyserialnumber
 ```
 crs:rawfilename
 xmp:nickname
--------------
+------------
 _MG_9966.CR2
 IMG_9966.CR2
 ```
@@ -176,7 +176,7 @@ dc:identifier
 iptc4xmpext:digimageguid
 xmp:identifier
 xmp:label
-----------------------------------------------------------
+-----------------------------------------------------------
 20190721_002522_f0300_CanonEOS600D_163066096284__MG_9966_v2
 20190721_002522_f0300_CanonEOS600D_163066096284_IMG_9966_v2
 ```
