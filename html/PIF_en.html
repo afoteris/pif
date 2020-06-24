@@ -27,8 +27,8 @@
     <a href="PIF.html">Русский</a>
 </div>
 <h1>Naming order of photos (PIF)</h1>
-<p>Version 0.6.0<br />
-2020-06-20</p>
+<p>Version 0.7.0<br />
+2020-06-24</p>
 <hr />
 <h2>Abbreviation explanation</h2>
 <p><strong>PIF</strong> (Russian: <strong>ПИФ</strong> [pif]) — <strong>П</strong>орядок <strong>И</strong>менования <strong>Ф</strong>отографий.</p>
@@ -49,15 +49,17 @@
 <h2>Prerequisites</h2>
 <ul>
 <li>Need for unique photo names for eliminating of threat of loss or damage of photos themselves or information about them because of the same names in the environments of digital control systems (operating, file, database…) based on the uniqueness of file names.</li>
+<li>Need for possibility of restoring of photo name if it is damaged.</li>
 <li>Need for unified and clear naming order of individual subsets of photos for ensuring of productivity when shared using and maintaining of them.</li>
 </ul>
 <h2>Direction of the solution</h2>
-<p>The solution should strive for the most possible freedom of use. This is possible if it is built on just initial technical parameters of photo creation (date and time, camera model, frame number…), but not descriptive ones (names of people, names of places or events…).</p>
-<p>Only initial technical parameters for all in its essence are constant, clear and unambiguous in time and space. At the same time there should be a minimum of these parameters for reducing of length of photo name, but enough for its uniqueness.</p>
+<p>The solution should strive for the most possible freedom of use. This is possible if it is built on just initial technical parameters of photo creation (date and time, camera model, frame number…), but not descriptive ones (names of people, names of places or events…). Only initial technical parameters for all in its essence are constant, clear and unambiguous in time and space. At the same time there should be a minimum of these parameters for reducing of length of photo name, but enough for its uniqueness.</p>
+<p>The solution should strive for the least dependence from additional data carriers for its realization. This is possible if photo files will themselves be carriers of this data.</p>
 <h2>Solution</h2>
 <p>The Order is based on chronology, because it is inherent in everything, strictly linear, and therefore unambiguous and clear. But chronology is not able to ensure the uniqueness of photo name independently, therefore it is used in combination with other initial technical parameters.</p>
 <p>The Order aims to ensure the uniqueness of photo name on a global scale for any shooting parameters, if reliable values of parameters are used for composing of photo name.</p>
-<p>Only values of following initial technical parameters are used:</p>
+<p>The Order is strictly based on the standard metadata tags and sets the mandatory presence of every logical part of photo name in these metadata tags at least inside the original photo file.</p>
+<p>Only values of following initial technical parameters that are capable of being represented in metadata are used:</p>
 <ul>
 <li><strong>date</strong> — YYYYMMDD;</li>
 <li><strong>time</strong> — HHMMSS in the 24-hour notation;</li>
@@ -141,7 +143,7 @@ exifex:bodyserialnumber
 </code></pre>
 <pre><code>crs:rawfilename
 xmp:nickname
--------------
+------------
 _MG_9966.CR2
 IMG_9966.CR2
 </code></pre>
@@ -155,7 +157,7 @@ grayscale
 iptc4xmpext:digimageguid
 xmp:identifier
 xmp:label
-----------------------------------------------------------
+-----------------------------------------------------------
 20190721_002522_f0300_CanonEOS600D_163066096284__MG_9966_v2
 20190721_002522_f0300_CanonEOS600D_163066096284_IMG_9966_v2
 </code></pre>
