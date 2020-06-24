@@ -39,13 +39,14 @@ This Order is licensed under the *Creative Commons Attribution-ShareAlike 4.0 In
 ## Prerequisites
 
 - Need for unique photo names for eliminating of threat of loss or damage of photos themselves or information about them because of the same names in the environments of digital control systems (operating, file, database…) based on the uniqueness of file names.
+- Need for possibility of restoring of photo name if it is damaged.
 - Need for unified and clear naming order of individual subsets of photos for ensuring of productivity when shared using and maintaining of them.
 
 ## Direction of the solution
 
-The solution should strive for the most possible freedom of use. This is possible if it is built on just initial technical parameters of photo creation (date and time, camera model, frame number…), but not descriptive ones (names of people, names of places or events…).
+The solution should strive for the most possible freedom of use. This is possible if it is built on just initial technical parameters of photo creation (date and time, camera model, frame number…), but not descriptive ones (names of people, names of places or events…). Only initial technical parameters for all in its essence are constant, clear and unambiguous in time and space. At the same time there should be a minimum of these parameters for reducing of length of photo name, but enough for its uniqueness.
 
-Only initial technical parameters for all in its essence are constant, clear and unambiguous in time and space. At the same time there should be a minimum of these parameters for reducing of length of photo name, but enough for its uniqueness.
+The solution should strive for the least dependence from additional data carriers for its realization. This is possible if photo files will themselves be carriers of this data.
 
 ## Solution
 
@@ -53,7 +54,9 @@ The Order is based on chronology, because it is inherent in everything, strictly
 
 The Order aims to ensure the uniqueness of photo name on a global scale for any shooting parameters, if reliable values of parameters are used for composing of photo name.
 
-Only values of following initial technical parameters are used:
+The Order is strictly based on the standard metadata tags and sets the mandatory presence of every logical part of photo name in these metadata tags at least inside the original photo file.
+
+Only values of following initial technical parameters that are capable of being represented in metadata are used:
 
 - **date** — YYYYMMDD;  
 - **time** — HHMMSS in the 24-hour notation;  
