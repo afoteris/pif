@@ -54,7 +54,7 @@ The Order is based on chronology, because it is inherent in everything, strictly
 
 The Order aims to ensure the uniqueness of photo name on a global scale for any shooting parameters, if reliable values of parameters are used for composing of photo name.
 
-The Order is strictly based on the standard metadata tags and sets the mandatory presence of every logical part of photo name in these metadata tags at least inside the original photo file.
+The Order is strictly based on the standard metadata tags and sets the mandatory presence of every semantic part of photo name in these metadata tags at least inside the original photo file.
 
 Only values of following initial technical parameters that are capable of being represented in metadata are used:
 
