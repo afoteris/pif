@@ -66,7 +66,7 @@ Only values of following initial technical parameters that are capable of being 
 - **camera serial number**;  
 - **frame designation** — simple designation, for example, original name, or composite designation, for example, composed of intracamera folder number and serial frame number;  
 - **addition** — simple addition, for example, version, purpose, or composite addition, for example, composed of color space and version. Recommended only for derivative files, if necessary.
-  
+
 Only the following symbols are used:
 
 - **a-Z** (Latin);  
