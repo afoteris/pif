@@ -39,6 +39,7 @@ This Order is licensed under the *Creative Commons Attribution-ShareAlike 4.0 In
 ## Prerequisites
 
 - Need for unique photo names for eliminating of threat of loss or damage of photos themselves or information about them because of the same names in the environments of digital control systems (operating, file, database…) based on the uniqueness of file names.
+- Need for compatibility of photo names with various digital control systems for safe portability of photo files between these systems.
 - Need for possibility of restoring of photo name if it is damaged.
 - Need for unified and clear naming order of individual subsets of photos for ensuring of productivity when shared using and maintaining of them.
 
@@ -56,7 +57,7 @@ The Order aims to ensure the uniqueness of photo name on a global scale for any 
 
 The Order is strictly based on the standard metadata tags and sets the mandatory presence of every semantic part of photo name in these metadata tags at least inside the original photo file.
 
-Only values of following initial technical parameters that are capable of being represented in metadata are used:
+Only values of following initial technical parameters that are capable of being represented in standard metadata are used:
 
 - **date** — YYYYMMDD;  
 - **time** — HHMMSS in the 24-hour notation;  
@@ -72,7 +73,15 @@ Only the following symbols are used:
 - **0-9** (Arabic numerals);  
 - **_** (underscore) — for visually separating of structure parts of photo name from each other.
 
-This allows to make photo names uniform and with distinguishable structure for visual perception, and also enables to simplify the writing of scripts using these names.
+Combination of uppercase and lowercase letters in photo name is allowed only if the global uniqueness of this name is ensured regardless of the case used, i.e. if there is strict following the Order. This is due to the fact that different digital control systems have different case sensitivity, which can cause collisions when file transferring from one such system to another.
+
+As a result, the solution allows to:
+
+- ensure the compatibility of photo names with various digital control systems;
+- ensure the possibility of restoring of photo name from its metadata;
+- significantly reduce chance of human factor occurrence, when, for example, unnecessary invisible spaces or the same characters from different alphabets may appear in the name;
+- simplify writing of scripts that use these names;
+- make photo names uniform and with distinguishable structure for visual perception.
 
 At desire, digressions from strict adherence to the Order are permissible under user's personal responsibility.
 
