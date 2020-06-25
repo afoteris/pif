@@ -1,7 +1,7 @@
 # Naming order of photos (PIF)
 
-Version 0.7.1  
-2020-06-24
+Version 0.8.0  
+2020-06-26
 
 ***
 
