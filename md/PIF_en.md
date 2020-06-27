@@ -71,7 +71,7 @@ Only the following symbols are used:
 
 - **a-Z** (Latin);  
 - **0-9** (Arabic numerals);  
-- **_** (underscore) — for visually separating of structure parts of photo name from each other.
+- **_** (underscore) — for visually separating of semantic parts of photo name from each other.
 
 Combination of uppercase and lowercase letters in photo name is allowed only if the global uniqueness of this name is ensured regardless of the case used, i.e. if there is strict following the Order. This is due to the fact that different digital control systems have different case sensitivity, which can cause collisions when file transferring from one such system to another.
 
