@@ -13,6 +13,8 @@ Version 0.8.1
 
 **Order** (with a capital) — this document or the rules set forth in it, or both, depending on the context.
 
+**DCS** — digital control system (operating, file, database…).
+
 **Russian** — language represented by *ru* code in *ISO 639-1:2002*.
 
 **English** — language represented by *en* code in *ISO 639-1:2002*.
@@ -38,8 +40,8 @@ This Order is licensed under the *Creative Commons Attribution-ShareAlike 4.0 In
 
 ## Prerequisites
 
-- Need for unique photo names for eliminating of threat of loss or damage of photos themselves or information about them because of the same names in the environments of digital control systems (operating, file, database…) based on the uniqueness of file names.
-- Need for compatibility of photo names with various digital control systems for safe portability of photo files between these systems.
+- Need for unique photo names for eliminating of threat of loss or damage of photos themselves or information about them because of the same names in the environments of DCSs based on the uniqueness of file names.
+- Need for compatibility of photo names with various DCSs for safe portability of photo files between these systems.
 - Need for possibility of restoring of photo name if it is damaged.
 - Need for unified and clear naming order of individual subsets of photos for ensuring of productivity when shared using and maintaining of them.
 
@@ -73,11 +75,11 @@ Only the following symbols are used:
 - **0-9** (Arabic numerals);  
 - **_** (underscore) — for visually separating of semantic parts of photo name from each other.
 
-Combination of uppercase and lowercase letters in photo name is allowed only if the global uniqueness of this name is ensured regardless of the case used, i.e. if there is strict following the Order. This is due to the fact that different digital control systems have different case sensitivity, which can cause collisions when file transferring from one such system to another.
+Combination of uppercase and lowercase letters in photo name is allowed only if the global uniqueness of this name is ensured regardless of the case used, i.e. if there is strict following the Order. This is due to the fact that different DCSs have different case sensitivity, which can cause collisions when file transferring from one such system to another.
 
 As a result, the solution allows to:
 
-- ensure the compatibility of photo names with various digital control systems;
+- ensure the compatibility of photo names with various DCSs;
 - ensure the possibility of restoring of photo name from its metadata;
 - significantly reduce chance of human factor occurrence, when, for example, unnecessary invisible spaces or the same characters from different alphabets may appear in the name;
 - simplify writing of scripts that use these names;
