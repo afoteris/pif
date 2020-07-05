@@ -68,10 +68,10 @@
 <h2>Prerequisites</h2>
 
 <ul>
-<li>Need for unique photo names for eliminating of threat of loss or damage of photos themselves or information about them because of the same names in the environments of DCSs based on the uniqueness of file names.</li>
-<li>Need for compatibility of photo names with various DCSs for safe portability of photo files between these systems.</li>
-<li>Need for possibility of restoring of photo name if it is damaged.</li>
-<li>Need for unified and clear naming order of individual subsets of photos for ensuring of productivity when shared using and maintaining of them.</li>
+    <li>Need for unique photo names for eliminating of threat of loss or damage of photos themselves or information about them because of the same names in the environments of DCSs based on the uniqueness of file names.</li>
+    <li>Need for compatibility of photo names with various DCSs for safe portability of photo files between these systems.</li>
+    <li>Need for possibility of restoring of photo name if it is damaged.</li>
+    <li>Need for unified and clear naming order of individual subsets of photos for ensuring of productivity when shared using and maintaining of them.</li>
 </ul>
 
 <h2>Direction of the solution</h2>
@@ -86,28 +86,28 @@
 <p>The Order is strictly based on the standard metadata tags and sets the mandatory presence of every semantic part of photo name in these metadata tags at least inside the original photo file.</p>
 <p>Only values of following initial technical parameters that are capable of being represented in standard metadata are used:</p>
 <ul>
-<li><strong>date</strong> — YYYYMMDD;</li>
-<li><strong>time</strong> — HHMMSS in the 24-hour notation;</li>
-<li><strong>time zone</strong> — fHHMM or bHHMM, where <em>f</em> — forward, <em>b</em> — backward;</li>
-<li><strong>camera model</strong>;</li>
-<li><strong>camera serial number</strong>;</li>
-<li><strong>frame designation</strong> — simple designation, for example, original name, or composite designation, for example, composed of intracamera folder number and serial frame number;</li>
-<li><strong>addition</strong> — simple addition, for example, version, purpose, or composite addition, for example, composed of color space and version. Recommended only for derivative files, if necessary.</li>
+    <li><strong>date</strong> — YYYYMMDD;</li>
+    <li><strong>time</strong> — HHMMSS in the 24-hour notation;</li>
+    <li><strong>time zone</strong> — fHHMM or bHHMM, where <em>f</em> — forward, <em>b</em> — backward;</li>
+    <li><strong>camera model</strong>;</li>
+    <li><strong>camera serial number</strong>;</li>
+    <li><strong>frame designation</strong> — simple designation, for example, original name, or composite designation, for example, composed of intracamera folder number and serial frame number;</li>
+    <li><strong>addition</strong> — simple addition, for example, version, purpose, or composite addition, for example, composed of color space and version. Recommended only for derivative files, if necessary.</li>
 </ul>
 <p>Only the following symbols are used:</p>
 <ul>
-<li><strong>a-Z</strong> (Latin);</li>
-<li><strong>0-9</strong> (Arabic numerals);</li>
-<li><strong>_</strong> (underscore) — for visually separating of semantic parts of photo name from each other.</li>
+    <li><strong>a-Z</strong> (Latin);</li>
+    <li><strong>0-9</strong> (Arabic numerals);</li>
+    <li><strong>_</strong> (underscore) — for visually separating of semantic parts of photo name from each other.</li>
 </ul>
 <p>Combination of uppercase and lowercase letters in photo name is allowed only if the global uniqueness of this name is ensured regardless of the case used, i.e. if there is strict following the Order. This is due to the fact that different DCSs have different case sensitivity, which can cause collisions when file transferring from one such system to another.</p>
 <p>As a result, the solution allows to:</p>
 <ul>
-<li>ensure the compatibility of photo names with various DCSs;</li>
-<li>ensure the possibility of restoring of photo name from its metadata;</li>
-<li>significantly reduce chance of human factor occurrence, when, for example, unnecessary invisible spaces or the same characters from different alphabets may appear in the name;</li>
-<li>simplify writing of scripts that use these names;</li>
-<li>make photo names uniform and with distinguishable structure for visual perception.</li>
+    <li>ensure the compatibility of photo names with various DCSs;</li>
+    <li>ensure the possibility of restoring of photo name from its metadata;</li>
+    <li>significantly reduce chance of human factor occurrence, when, for example, unnecessary invisible spaces or the same characters from different alphabets may appear in the name;</li>
+    <li>simplify writing of scripts that use these names;</li>
+    <li>make photo names uniform and with distinguishable structure for visual perception.</li>
 </ul>
 <p>At desire, digressions from strict adherence to the Order are permissible under user's personal responsibility.</p>
 
@@ -154,11 +154,11 @@ xmp:label                | Photo name         | xmp
 </pre>
 <p>Tags belong to the following standards:</p>
 <ul>
-<li>CIPA DC-010-2017 (Exif 2.31 metadata for XMP)</li>
-<li>IPTC Photo Metadata Standard 2019.1</li>
-<li>PLUS Version 1.2.2</li>
-<li>XMP SPECIFICATION PART 1: DATA MODEL, SERIALIZATION, AND CORE PROPERTIES. April 2012</li>
-<li>XMP SPECIFICATION PART 2: ADDITIONAL PROPERTIES. August 2016</li>
+    <li>CIPA DC-010-2017 (Exif 2.31 metadata for XMP)</li>
+    <li>IPTC Photo Metadata Standard 2019.1</li>
+    <li>PLUS Version 1.2.2</li>
+    <li>XMP SPECIFICATION PART 1: DATA MODEL, SERIALIZATION, AND CORE PROPERTIES. April 2012</li>
+    <li>XMP SPECIFICATION PART 2: ADDITIONAL PROPERTIES. August 2016</li>
 </ul>
 <p>If necessary, using of other well-known tags is available, for example, for addition in name.</p>
 
