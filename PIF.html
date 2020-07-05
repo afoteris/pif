@@ -71,34 +71,34 @@
 </ul>
 <p>При желании допустимы отступления от строгого следования Порядку под собственную ответственность пользователя.</p>
 <h3>Образец схемы именования</h3>
-<pre><code>ДАТА_ВРЕМЯ_ЧАСОВОЙПОЯС_МОДЕЛЬКАМЕРЫ_СЕРИЙНЫЙНОМЕРКАМЕРЫ_ОБОЗНАЧЕНИЕКАДРА_ДОПОЛНЕНИЕ.РАСШИРЕНИЕ
-</code></pre>
+<pre>ДАТА_ВРЕМЯ_ЧАСОВОЙПОЯС_МОДЕЛЬКАМЕРЫ_СЕРИЙНЫЙНОМЕРКАМЕРЫ_ОБОЗНАЧЕНИЕКАДРА_ДОПОЛНЕНИЕ.РАСШИРЕНИЕ
+</pre>
 <h3>Рекомендуемые теги метаданных для хранения данных имени</h3>
-<pre><code>exif:datetimeoriginal    | ДАТА_ВРЕМЯ_ЧАСОВОЙПОЯС | xmp
+<pre>exif:datetimeoriginal    | ДАТА_ВРЕМЯ_ЧАСОВОЙПОЯС | xmp
 xmp:createdate           | ДАТА_ВРЕМЯ_ЧАСОВОЙПОЯС | xmp
-</code></pre>
-<pre><code>datetimeoriginal         | ДАТА_ВРЕМЯ             | exif
-</code></pre>
-<pre><code>offsettimeoriginal       | ЧАСОВОЙПОЯС            | exif
-</code></pre>
-<pre><code>model                    | МОДЕЛЬКАМЕРЫ           | exif
+</pre>
+<pre>datetimeoriginal         | ДАТА_ВРЕМЯ             | exif
+</pre>
+<pre>offsettimeoriginal       | ЧАСОВОЙПОЯС            | exif
+</pre>
+<pre>model                    | МОДЕЛЬКАМЕРЫ           | exif
 tiff:model               | МОДЕЛЬКАМЕРЫ           | xmp
 xmp:creatortool          | МОДЕЛЬКАМЕРЫ           | xmp
-</code></pre>
-<pre><code>bodyserialnumber         | СЕРИЙНЫЙНОМЕРКАМЕРЫ    | exif
+</pre>
+<pre>bodyserialnumber         | СЕРИЙНЫЙНОМЕРКАМЕРЫ    | exif
 exifex:bodyserialnumber  | СЕРИЙНЫЙНОМЕРКАМЕРЫ    | xmp
-</code></pre>
-<pre><code>crs:rawfilename          | ОБОЗНАЧЕНИЕКАДРА       | xmp
+</pre>
+<pre>crs:rawfilename          | ОБОЗНАЧЕНИЕКАДРА       | xmp
 xmp:nickname             | ОБОЗНАЧЕНИЕКАДРА       | xmp
-</code></pre>
-<pre><code>usercomment              | ДОПОЛНЕНИЕ             | exif
+</pre>
+<pre>usercomment              | ДОПОЛНЕНИЕ             | exif
 exif:usercomment         | ДОПОЛНЕНИЕ             | xmp
-</code></pre>
-<pre><code>dc:identifier            | Имя фотографии         | xmp
+</pre>
+<pre>dc:identifier            | Имя фотографии         | xmp
 iptc4xmpext:digimageguid | Имя фотографии         | xmp
 xmp:identifier           | Имя фотографии         | xmp
 xmp:label                | Имя фотографии         | xmp
-</code></pre>
+</pre>
 <p>Теги принадлежат следующим стандартам:</p>
 <ul>
 <li>CIPA DC-010-2017 (Exif 2.31 metadata for XMP)</li>
@@ -110,69 +110,69 @@ xmp:label                | Имя фотографии         | xmp
 <p>При необходимости можно использовать другие известные теги, например, для дополнения в имени.</p>
 <h2>Примеры</h2>
 <h3>Значения для тегов</h3>
-<pre><code>exif:datetimeoriginal
+<pre>exif:datetimeoriginal
 xmp:createdate
 ----------------------------
 2019-07-21T00:25:22.00+03:00
-</code></pre>
-<pre><code>datetimeoriginal
+</pre>
+<pre>datetimeoriginal
 -------------------
 2019-07-21T00:25:22
-</code></pre>
-<pre><code>offsettimeoriginal
+</pre>
+<pre>offsettimeoriginal
 ------
 +03:00
-</code></pre>
-<pre><code>model
+</pre>
+<pre>model
 tiff:model
 xmp:creatortool
 --------------
 Canon EOS 600D
-</code></pre>
-<pre><code>bodyserialnumber
+</pre>
+<pre>bodyserialnumber
 exifex:bodyserialnumber
 ------------
 163066096284
-</code></pre>
-<pre><code>crs:rawfilename
+</pre>
+<pre>crs:rawfilename
 xmp:nickname
 ------------
 _MG_9966.CR2
 IMG_9966.CR2
-</code></pre>
-<pre><code>usercomment
+</pre>
+<pre>usercomment
 exif:usercomment
 ---------
 v2
 grayscale
-</code></pre>
-<pre><code>dc:identifier
+</pre>
+<pre>dc:identifier
 iptc4xmpext:digimageguid
 xmp:identifier
 xmp:label
 -----------------------------------------------------------
 20190721_002522_f0300_CanonEOS600D_163066096284__MG_9966_v2
 20190721_002522_f0300_CanonEOS600D_163066096284_IMG_9966_v2
-</code></pre>
+</pre>
 <h3>Именование с полным соответствием Порядку</h3>
-<pre><code>20190721_002522_f0300_CanonEOS600D_163066096284__MG_9966.CR2
-</code></pre>
-<pre><code>20190721_002522_f0300_CanonEOS600D_163066096284__MG_9966_v2.psd
-</code></pre>
-<pre><code>20190721_002522_f0300_CanonEOS600D_163066096284__MG_9966_grayscale.jpg
-</code></pre>
+<pre>20190721_002522_f0300_CanonEOS600D_163066096284__MG_9966.CR2
+</pre>
+<pre>20190721_002522_f0300_CanonEOS600D_163066096284__MG_9966_v2.psd
+</pre>
+<pre>20190721_002522_f0300_CanonEOS600D_163066096284__MG_9966_grayscale.jpg
+</pre>
 <h3>Именование с пользовательскими отступлениями</h3>
-<pre><code>20190721_002522__MG_9966_f0300_CanonEOS600D_163066096284.CR2
-</code></pre>
-<pre><code>20190721_002522f0300_CanonEOS600D163066096284_MG9966.CR2
-</code></pre>
-<pre><code>20190721_002522_IMG9966_CanonEOS600D163066096284.CR2
-</code></pre>
-<pre><code>20190721_002522__MG_9966.CR2
-</code></pre>
-<pre><code>20190721_002522__MG_9966_v2.jpg
-</code></pre>
-<pre><code>20190721_002522f0300_1009966.CR2
-</code></pre>
+<pre>20190721_002522__MG_9966_f0300_CanonEOS600D_163066096284.CR2
+</pre>
+<pre>20190721_002522f0300_CanonEOS600D163066096284_MG9966.CR2
+</pre>
+<pre>20190721_002522_IMG9966_CanonEOS600D163066096284.CR2
+</pre>
+<pre>20190721_002522__MG_9966.CR2
+</pre>
+<pre>20190721_002522__MG_9966_v2.jpg
+</pre>
+<pre>20190721_002522f0300_1009966.CR2
+</pre>
 </body>
 </html>

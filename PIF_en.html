@@ -73,34 +73,34 @@
 </ul>
 <p>At desire, digressions from strict adherence to the Order are permissible under user's personal responsibility.</p>
 <h3>Sample of naming scheme</h3>
-<pre><code>DATE_TIME_TIMEZONE_CAMERAMODEL_CAMERASERIALNUMBER_FRAMEDESIGNATION_ADDITION.EXTENSION
-</code></pre>
+<pre>DATE_TIME_TIMEZONE_CAMERAMODEL_CAMERASERIALNUMBER_FRAMEDESIGNATION_ADDITION.EXTENSION
+</pre>
 <h3>Recommended metadata tags for storing name data</h3>
-<pre><code>exif:datetimeoriginal    | DATE_TIME_TIMEZONE | xmp
+<pre>exif:datetimeoriginal    | DATE_TIME_TIMEZONE | xmp
 xmp:createdate           | DATE_TIME_TIMEZONE | xmp
-</code></pre>
-<pre><code>datetimeoriginal         | DATE_TIME          | exif
-</code></pre>
-<pre><code>offsettimeoriginal       | TIMEZONE           | exif
-</code></pre>
-<pre><code>model                    | CAMERAMODEL        | exif
+</pre>
+<pre>datetimeoriginal         | DATE_TIME          | exif
+</pre>
+<pre>offsettimeoriginal       | TIMEZONE           | exif
+</pre>
+<pre>model                    | CAMERAMODEL        | exif
 tiff:model               | CAMERAMODEL        | xmp
 xmp:creatortool          | CAMERAMODEL        | xmp
-</code></pre>
-<pre><code>bodyserialnumber         | CAMERASERIALNUMBER | exif
+</pre>
+<pre>bodyserialnumber         | CAMERASERIALNUMBER | exif
 exifex:bodyserialnumber  | CAMERASERIALNUMBER | xmp
-</code></pre>
-<pre><code>crs:rawfilename          | FRAMEDESIGNATION   | xmp
+</pre>
+<pre>crs:rawfilename          | FRAMEDESIGNATION   | xmp
 xmp:nickname             | FRAMEDESIGNATION   | xmp
-</code></pre>
-<pre><code>usercomment              | ADDITION           | exif
+</pre>
+<pre>usercomment              | ADDITION           | exif
 exif:usercomment         | ADDITION           | xmp
-</code></pre>
-<pre><code>dc:identifier            | Photo name         | xmp
+</pre>
+<pre>dc:identifier            | Photo name         | xmp
 iptc4xmpext:digimageguid | Photo name         | xmp
 xmp:identifier           | Photo name         | xmp
 xmp:label                | Photo name         | xmp
-</code></pre>
+</pre>
 <p>Tags belong to the following standards:</p>
 <ul>
 <li>CIPA DC-010-2017 (Exif 2.31 metadata for XMP)</li>
@@ -112,69 +112,69 @@ xmp:label                | Photo name         | xmp
 <p>If necessary, using of other well-known tags is available, for example, for addition in name.</p>
 <h2>Examples</h2>
 <h3>Values for the tags</h3>
-<pre><code>exif:datetimeoriginal
+<pre>exif:datetimeoriginal
 xmp:createdate
 ----------------------------
 2019-07-21T00:25:22.00+03:00
-</code></pre>
-<pre><code>datetimeoriginal
+</pre>
+<pre>datetimeoriginal
 -------------------
 2019-07-21T00:25:22
-</code></pre>
-<pre><code>offsettimeoriginal
+</pre>
+<pre>offsettimeoriginal
 ------
 +03:00
-</code></pre>
-<pre><code>model
+</pre>
+<pre>model
 tiff:model
 xmp:creatortool
 --------------
 Canon EOS 600D
-</code></pre>
-<pre><code>bodyserialnumber
+</pre>
+<pre>bodyserialnumber
 exifex:bodyserialnumber
 ------------
 163066096284
-</code></pre>
-<pre><code>crs:rawfilename
+</pre>
+<pre>crs:rawfilename
 xmp:nickname
 ------------
 _MG_9966.CR2
 IMG_9966.CR2
-</code></pre>
-<pre><code>usercomment
+</pre>
+<pre>usercomment
 exif:usercomment
 ---------
 v2
 grayscale
-</code></pre>
-<pre><code>dc:identifier
+</pre>
+<pre>dc:identifier
 iptc4xmpext:digimageguid
 xmp:identifier
 xmp:label
 -----------------------------------------------------------
 20190721_002522_f0300_CanonEOS600D_163066096284__MG_9966_v2
 20190721_002522_f0300_CanonEOS600D_163066096284_IMG_9966_v2
-</code></pre>
+</pre>
 <h3>Naming with full compliance with the Order</h3>
-<pre><code>20190721_002522_f0300_CanonEOS600D_163066096284__MG_9966.CR2
-</code></pre>
-<pre><code>20190721_002522_f0300_CanonEOS600D_163066096284__MG_9966_v2.psd
-</code></pre>
-<pre><code>20190721_002522_f0300_CanonEOS600D_163066096284__MG_9966_grayscale.jpg
-</code></pre>
+<pre>20190721_002522_f0300_CanonEOS600D_163066096284__MG_9966.CR2
+</pre>
+<pre>20190721_002522_f0300_CanonEOS600D_163066096284__MG_9966_v2.psd
+</pre>
+<pre>20190721_002522_f0300_CanonEOS600D_163066096284__MG_9966_grayscale.jpg
+</pre>
 <h3>Naming with custom digressions</h3>
-<pre><code>20190721_002522__MG_9966_f0300_CanonEOS600D_163066096284.CR2
-</code></pre>
-<pre><code>20190721_002522f0300_CanonEOS600D163066096284_MG9966.CR2
-</code></pre>
-<pre><code>20190721_002522_IMG9966_CanonEOS600D163066096284.CR2
-</code></pre>
-<pre><code>20190721_002522__MG_9966.CR2
-</code></pre>
-<pre><code>20190721_002522__MG_9966_v2.jpg
-</code></pre>
-<pre><code>20190721_002522f0300_1009966.CR2
-</code></pre>
+<pre>20190721_002522__MG_9966_f0300_CanonEOS600D_163066096284.CR2
+</pre>
+<pre>20190721_002522f0300_CanonEOS600D163066096284_MG9966.CR2
+</pre>
+<pre>20190721_002522_IMG9966_CanonEOS600D163066096284.CR2
+</pre>
+<pre>20190721_002522__MG_9966.CR2
+</pre>
+<pre>20190721_002522__MG_9966_v2.jpg
+</pre>
+<pre>20190721_002522f0300_1009966.CR2
+</pre>
 </body>
 </html>
