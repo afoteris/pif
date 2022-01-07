@@ -252,6 +252,10 @@ body {
     background-color: #fafafa;
 }
 
+em {
+    color: #484848;
+}
+
 pre {
     color: #484848;
     border-color: #eaeaea;
