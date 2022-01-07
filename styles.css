@@ -116,7 +116,6 @@ li {
 pre {
     margin: 0.41em 0;
     padding: 8px 12px;
-    border: 1px solid;
     border-radius: 4px;
 }
 
@@ -147,6 +146,10 @@ body {
     font-family: 'PT Sans', sans-serif;
     line-height: 1.2;
     font-size: 18px;
+}
+
+pre {
+    font-size: 1.2em;
 }
 
 abbr {
@@ -253,7 +256,7 @@ body {
 }
 
 pre {
-    border-color: #eaeaea;
+    background-color: #ffffff;
 }
 
 a {
