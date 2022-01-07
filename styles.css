@@ -34,49 +34,6 @@ q {
     quotes: none;
 }
 
-/* Fix "inline" rendering of <main> in IE11. */
-main {
-    display: block;
-}
-
-/* Fix "inline" rendering of <details> in IE11, Edge. */
-details {
-    display: block;
-}
-
-/* Fix "inline" rendering of <summary> in IE11, Edge. */
-summary {
-    display: list-item;
-}
-
-/* Prevent horizontal scrolling if text is wider than screen in IE11, Edge. */
-legend {
-    max-width: 100%;
-}
-
-/* Remove default vertical scrollbar in IE11. */
-textarea {
-    overflow: auto;
-}
-
-hr {
-    border-bottom: 1px solid;
-}
-
-sub,
-sup {
-    line-height: 0;
-    position: relative;
-}
-
-sub {
-    bottom: -0.22em;
-}
-
-sup {
-    top: -0.56em;
-}
-
 table {
     border-collapse: collapse;
 }
@@ -212,10 +169,6 @@ cite {
     font-style: italic;
 }
 
-code {
-    font-family: monospace;
-}
-
 dt {
     font-weight: bolder;
 }
@@ -252,14 +205,6 @@ ins {
     border-bottom: 1px solid;
 }
 
-kbd {
-    font-family: monospace;
-}
-
-pre {
-    font-family: monospace;
-}
-
 q {
     font-style: italic;
 }
@@ -268,21 +213,8 @@ s {
     text-decoration: line-through;
 }
 
-samp {
-    font-family: monospace;
-}
-
-small {
-    font-size: 0.8em;
-}
-
 strong {
     font-weight: bolder;
-}
-
-sub,
-sup {
-    font-size: 0.64em;
 }
 
 var {
