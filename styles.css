@@ -252,12 +252,14 @@ mark {
 }
 
 body {
-    color: #242424;
+    color: #323232;
+    background-color: #fafafa;
 }
 
 pre {
+    color: #484848;
     border-color: #eaeaea;
-    background-color: #fafafa;
+    background-color: #ffffff;
 }
 
 a {
@@ -265,7 +267,7 @@ a {
 }
 
 a:hover {
-    color: #242424;
+    color: #323232;
 }
 
 hr {
