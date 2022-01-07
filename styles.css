@@ -257,6 +257,7 @@ pre {
 
 a {
     color: #0088ff;
+    text-decoration: underline;
 }
 
 a:hover {
