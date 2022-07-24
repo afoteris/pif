@@ -147,37 +147,35 @@ DATE_TIME_TIMEZONE_CAMERAMODEL_CAMERASERIALNUMBER_FRAMEDESIGNATION_ADDITION.EXTE
                 <h3>Recommended Metadata Tags for Storing Name Data</h3>
 
                 <pre>
-exif:datetimeoriginal    | DATE_TIME_TIMEZONE | xmp
-xmp:createdate           | DATE_TIME_TIMEZONE | xmp
+xmp  | exif:datetimeoriginal    | DATE_TIME_TIMEZONE
+xmp  | xmp:createdate           | DATE_TIME_TIMEZONE
 </pre>
                 <pre>
-datetimeoriginal         | DATE_TIME          | exif
+exif | datetimeoriginal         | DATE_TIME
 </pre>
                 <pre>
-offsettimeoriginal       | TIMEZONE           | exif
+exif | offsettimeoriginal       | TIMEZONE
 </pre>
                 <pre>
-model                    | CAMERAMODEL        | exif
-tiff:model               | CAMERAMODEL        | xmp
-xmp:creatortool          | CAMERAMODEL        | xmp
+exif | model                    | CAMERAMODEL
+xmp  | tiff:model               | CAMERAMODEL
+xmp  | xmp:creatortool          | CAMERAMODEL
 </pre>
                 <pre>
-bodyserialnumber         | CAMERASERIALNUMBER | exif
-exifex:bodyserialnumber  | CAMERASERIALNUMBER | xmp
+exif | bodyserialnumber         | CAMERASERIALNUMBER
+xmp  | exifex:bodyserialnumber  | CAMERASERIALNUMBER
 </pre>
                 <pre>
-crs:rawfilename          | FRAMEDESIGNATION   | xmp
-xmp:nickname             | FRAMEDESIGNATION   | xmp
+xmp  | crs:rawfilename          | FRAMEDESIGNATION
+xmp  | xmp:nickname             | FRAMEDESIGNATION
 </pre>
                 <pre>
-usercomment              | ADDITION           | exif
-exif:usercomment         | ADDITION           | xmp
+exif | usercomment              | ADDITION
+xmp  | exif:usercomment         | ADDITION
 </pre>
                 <pre>
-dc:identifier            | Photo name         | xmp
-iptc4xmpext:digimageguid | Photo name         | xmp
-xmp:identifier           | Photo name         | xmp
-xmp:label                | Photo name         | xmp
+xmp  | iptc4xmpext:digimageguid | Photo name
+xmp  | xmp:label                | Photo name
 </pre>
 
                 <p>Tags belong to the following standards:</p>

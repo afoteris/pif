@@ -147,35 +147,35 @@
                 <h3>Рекомендуемые теги метаданных для хранения данных имени</h3>
 
                 <pre>
-exif:datetimeoriginal    | ДАТА_ВРЕМЯ_ЧАСОВОЙПОЯС | xmp
-xmp:createdate           | ДАТА_ВРЕМЯ_ЧАСОВОЙПОЯС | xmp
+xmp  | exif:datetimeoriginal    | ДАТА_ВРЕМЯ_ЧАСОВОЙПОЯС
+xmp  | xmp:createdate           | ДАТА_ВРЕМЯ_ЧАСОВОЙПОЯС
 </pre>
                 <pre>
-datetimeoriginal         | ДАТА_ВРЕМЯ             | exif
+exif | datetimeoriginal         | ДАТА_ВРЕМЯ
 </pre>
                 <pre>
-offsettimeoriginal       | ЧАСОВОЙПОЯС            | exif
+exif | offsettimeoriginal       | ЧАСОВОЙПОЯС
 </pre>
                 <pre>
-model                    | МОДЕЛЬКАМЕРЫ           | exif
-tiff:model               | МОДЕЛЬКАМЕРЫ           | xmp
-xmp:creatortool          | МОДЕЛЬКАМЕРЫ           | xmp
+exif | model                    | МОДЕЛЬКАМЕРЫ
+xmp  | tiff:model               | МОДЕЛЬКАМЕРЫ
+xmp  | xmp:creatortool          | МОДЕЛЬКАМЕРЫ
 </pre>
                 <pre>
-bodyserialnumber         | СЕРИЙНЫЙНОМЕРКАМЕРЫ    | exif
-exifex:bodyserialnumber  | СЕРИЙНЫЙНОМЕРКАМЕРЫ    | xmp
+exif | bodyserialnumber         | СЕРИЙНЫЙНОМЕРКАМЕРЫ
+xmp  | exifex:bodyserialnumber  | СЕРИЙНЫЙНОМЕРКАМЕРЫ
 </pre>
                 <pre>
-crs:rawfilename          | ОБОЗНАЧЕНИЕКАДРА       | xmp
-xmp:nickname             | ОБОЗНАЧЕНИЕКАДРА       | xmp
+xmp  | crs:rawfilename          | ОБОЗНАЧЕНИЕКАДРА
+xmp  | xmp:nickname             | ОБОЗНАЧЕНИЕКАДРА
 </pre>
                 <pre>
-usercomment              | ДОПОЛНЕНИЕ             | exif
-exif:usercomment         | ДОПОЛНЕНИЕ             | xmp
+exif | usercomment              | ДОПОЛНЕНИЕ
+xmp  | exif:usercomment         | ДОПОЛНЕНИЕ
 </pre>
                 <pre>
-iptc4xmpext:digimageguid | Имя фотографии         | xmp
-xmp:label                | Имя фотографии         | xmp
+xmp  | iptc4xmpext:digimageguid | Имя фотографии
+xmp  | xmp:label                | Имя фотографии
 </pre>
 
                 <p>Теги принадлежат следующим стандартам:</p>
