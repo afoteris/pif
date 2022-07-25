@@ -141,42 +141,71 @@
                 <h3>Образец схемы именования</h3>
 
                 <pre>
-ДАТА_ВРЕМЯ_ЧАСОВОЙПОЯС_МОДЕЛЬКАМЕРЫ_СЕРИЙНЫЙНОМЕРКАМЕРЫ_ОБОЗНАЧЕНИЕКАДРА_ДОПОЛНЕНИЕ.РАСШИРЕНИЕ
+ДАТА_ВРЕМЯ_ЧАСОВОЙПОЯС_МОДЕЛЬКАМЕРЫ_СЕРИЙНЫЙНОМЕРКАМЕРЫ_ОБОЗНАЧЕНИЕКАДРА_ВЕРСИЯ_ДОПОЛНЕНИЕ.РАСШИРЕНИЕ
 </pre>
             </section>
             <section>
-                <h3>Рекомендуемые теги метаданных для хранения данных имени</h3>
+                <h3>Рекомендуемые для хранения данных имени стандартные теги метаданных с примерами</h3>
 
                 <pre>
 xmp  | exif:datetimeoriginal    | ДАТА_ВРЕМЯ_ЧАСОВОЙПОЯС
 xmp  | xmp:createdate           | ДАТА_ВРЕМЯ_ЧАСОВОЙПОЯС
+XMP  | photoshop:DateCreated    |
+----------------------------
+2019-07-21T00:25:22.00+03:00
 </pre>
                 <pre>
 exif | datetimeoriginal         | ДАТА_ВРЕМЯ
+Exif | DateTimeDigitized
+-------------------
+2019-07-21T00:25:22
 </pre>
                 <pre>
 exif | offsettimeoriginal       | ЧАСОВОЙПОЯС
+Exif | OffsetTimeDigitized
+------
++03:00
 </pre>
                 <pre>
 exif | model                    | МОДЕЛЬКАМЕРЫ
 xmp  | tiff:model               | МОДЕЛЬКАМЕРЫ
 xmp  | xmp:creatortool          | МОДЕЛЬКАМЕРЫ
+--------------
+Canon EOS 600D
 </pre>
                 <pre>
 exif | bodyserialnumber         | СЕРИЙНЫЙНОМЕРКАМЕРЫ
 xmp  | exifex:bodyserialnumber  | СЕРИЙНЫЙНОМЕРКАМЕРЫ
+------------
+163066096284
 </pre>
                 <pre>
 xmp  | crs:rawfilename          | ОБОЗНАЧЕНИЕКАДРА
 xmp  | xmp:nickname             | ОБОЗНАЧЕНИЕКАДРА
+------------
+_MG_9966.CR2
+IMG_9966.CR2
+</pre>
+                <pre>
+XMP  | xmpMM:VersionID          | ВЕРСИЯ
 </pre>
                 <pre>
 exif | usercomment              | ДОПОЛНЕНИЕ
 xmp  | exif:usercomment         | ДОПОЛНЕНИЕ
+---------
+v2
+grayscale
 </pre>
                 <pre>
 xmp  | iptc4xmpext:digimageguid | Имя фотографии
 xmp  | xmp:label                | Имя фотографии
+Exif | ImageUniqueID
+XMP  | exif:ImageUniqueID
+XMP  | xmpMM:DocumentID
+XMP  | xmpMM:OriginalDocumentID
+-----------------------------------------------------------
+20190721_002522_f0300_CanonEOS600D_163066096284__MG_9966_v2
+20190721_002522_f0300_CanonEOS600D_163066096284_IMG_9966_v2
 </pre>
 
                 <p>Теги принадлежат следующим стандартам:</p>
@@ -193,62 +222,8 @@ xmp  | xmp:label                | Имя фотографии
             </section>
         </section>
         <section>
-            <h2>Примеры</h2>
+            <h2>Примеры именования</h2>
 
-            <section>
-                <h3>Значения для тегов</h3>
-
-                <pre>
-exif:datetimeoriginal
-xmp:createdate
-----------------------------
-2019-07-21T00:25:22.00+03:00
-</pre>
-                <pre>
-datetimeoriginal
--------------------
-2019-07-21T00:25:22
-</pre>
-                <pre>
-offsettimeoriginal
-------
-+03:00
-</pre>
-                <pre>
-model
-tiff:model
-xmp:creatortool
---------------
-Canon EOS 600D
-</pre>
-                <pre>
-bodyserialnumber
-exifex:bodyserialnumber
-------------
-163066096284
-</pre>
-                <pre>
-crs:rawfilename
-xmp:nickname
-------------
-_MG_9966.CR2
-IMG_9966.CR2
-</pre>
-                <pre>
-usercomment
-exif:usercomment
----------
-v2
-grayscale
-</pre>
-                <pre>
-iptc4xmpext:digimageguid
-xmp:label
------------------------------------------------------------
-20190721_002522_f0300_CanonEOS600D_163066096284__MG_9966_v2
-20190721_002522_f0300_CanonEOS600D_163066096284_IMG_9966_v2
-</pre>
-            </section>
             <section>
                 <h3>Именование с полным соответствием Порядку</h3>
 
