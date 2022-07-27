@@ -36,6 +36,17 @@ q {
 
 table {
     border-collapse: collapse;
+    width: 100%;
+}
+
+td:first-child {
+    width: 160px;
+    overflow-wrap: anywhere;
+}
+
+td {
+    padding: 8px 12px;
+    border: 1px solid;
 }
 
 button,
@@ -96,7 +107,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 1.25em;
 }
 
-p {
+p, ul, ol, table {
     margin-top: 1em;
     margin-bottom: 1em;
 }
@@ -256,7 +267,7 @@ body {
     background-color: #fafafa;
 }
 
-pre {
+pre, table {
     background-color: #ffffff;
 }
 
@@ -266,4 +277,12 @@ a {
 
 a:hover {
     color: #323232;
+}
+
+td {
+    border-color: #dadada;
+}
+
+thead td:last-child {
+    background-color: #dadada;
 }
