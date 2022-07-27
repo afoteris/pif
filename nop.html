@@ -146,82 +146,77 @@ DATE_TIME_TIMEZONE_CAMERAMODEL_CAMERASERIALNUMBER_FRAMEDESIGNATION_VERSION_ADDIT
             <h3>Recommended Metadata Tags for Storing Name Data</h3>
 
             <pre>
+Standard | Tag                             |=>| ExifTool-tag
+===================================================================================
+
 DATE_TIME
----------------------------------------------------------------------------
-Exif | DateTimeOriginal
-Exif | DateTimeDigitized
----------------------------------------------------------------------------
-       2019-07-21T00:25:22
-</pre>
-            <pre>
+-----------------------------------------------------------------------------------
+Exif     | DateTimeOriginal                |  | exif:DateTimeOriginal
+Exif     | DateTimeDigitized               |=>| exif:CreateDate
+-----------------------------------------------------------------------------------
+           2019-07-21T00:25:22
+
 TIMEZONE
----------------------------------------------------------------------------
-Exif | OffsetTimeOriginal
-Exif | OffsetTimeDigitized
----------------------------------------------------------------------------
-       +03:00
-       -10:00
-</pre>
-            <pre>
+-----------------------------------------------------------------------------------
+Exif     | OffsetTimeOriginal              |  | exif:OffsetTimeOriginal
+Exif     | OffsetTimeDigitized             |  | exif:OffsetTimeDigitized
+-----------------------------------------------------------------------------------
+           +03:00
+           -10:00
+
 DATE_TIME_TIMEZONE
----------------------------------------------------------------------------
-XMP  | exif:DateTimeOriginal
-XMP  | xmp:CreateDate
-XMP  | photoshop:DateCreated
----------------------------------------------------------------------------
-       2019-07-21T00:25:22+03:00
-       2019-07-21T00:25:22.939+03:00
-</pre>
-            <pre>
+-----------------------------------------------------------------------------------
+XMP      | exif:DateTimeOriginal           |  | XMP-exif:DateTimeOriginal
+XMP      | xmp:CreateDate                  |  | XMP-xmp:CreateDate
+XMP      | photoshop:DateCreated           |  | XMP-photoshop:DateCreated
+-----------------------------------------------------------------------------------
+           2019-07-21T00:25:22+03:00
+           2019-07-21T00:25:22.939+03:00
+
 CAMERAMODEL
----------------------------------------------------------------------------
-Exif | Model
-XMP  | tiff:Model
-XMP  | xmp:CreatorTool
----------------------------------------------------------------------------
-       Canon EOS 600D
-</pre>
-            <pre>
+-----------------------------------------------------------------------------------
+Exif     | Model                           |  | exif:Model
+XMP      | tiff:Model                      |  | XMP-tiff:Model
+XMP      | xmp:CreatorTool                 |  | XMP-xmp:CreatorTool
+-----------------------------------------------------------------------------------
+           Canon EOS 600D
+
 CAMERASERIALNUMBER
----------------------------------------------------------------------------
-Exif | BodySerialNumber
-XMP  | exifEX:BodySerialNumber
----------------------------------------------------------------------------
-       163066096284
-</pre>
-            <pre>
+-----------------------------------------------------------------------------------
+Exif     | BodySerialNumber                |=>| exif:SerialNumber
+XMP      | exifEX:BodySerialNumber         |=>| XMP-exifEX:SerialNumber
+-----------------------------------------------------------------------------------
+           163066096284
+
 FRAMEDESIGNATION
----------------------------------------------------------------------------
-XMP  | crs:RawFileName
-XMP  | xmp:Nickname
----------------------------------------------------------------------------
-       IMG_9966.CR2
-</pre>
-            <pre>
+-----------------------------------------------------------------------------------
+XMP      | crs:RawFileName                 |  | XMP-crs:RawFileName
+XMP      | xmp:Nickname                    |  | XMP-xmp:Nickname
+-----------------------------------------------------------------------------------
+           IMG_9966.CR2
+
 VERSION
----------------------------------------------------------------------------
-XMP  | xmpMM:VersionID
----------------------------------------------------------------------------
-       2
-       ver2
-</pre>
-            <pre>
+-----------------------------------------------------------------------------------
+XMP      | xmpMM:VersionID                 |  | XMP-xmpMM:VersionID
+-----------------------------------------------------------------------------------
+           2
+           ver2
+
 ADDITION
----------------------------------------------------------------------------
-Exif | UserComment
-XMP  | exif:UserComment
----------------------------------------------------------------------------
-       grayscale
-       for printing
-</pre>
-            <pre>
+-----------------------------------------------------------------------------------
+Exif     | UserComment                     |  | exif:UserComment
+XMP      | exif:UserComment                |  | XMP-exif:UserComment
+-----------------------------------------------------------------------------------
+           grayscale
+           for printing
+
 Photo name
----------------------------------------------------------------------------
-Exif | ImageUniqueID
-XMP  | exif:ImageUniqueID
-XMP  | Iptc4xmpExt:DigImageGUID
----------------------------------------------------------------------------
-       20190721_002522_f0300_CanonEOS600D_163066096284_IMG_9966_2_grayscale
+-----------------------------------------------------------------------------------
+Exif     | ImageUniqueID                   |  | exif:ImageUniqueID
+XMP      | exif:ImageUniqueID              |  | XMP-exif:ImageUniqueID
+XMP      | Iptc4xmpExt:DigImageGUID        |=>| XMP-iptcExt:DigitalImageGUID
+-----------------------------------------------------------------------------------
+           20190721_002522_f0300_CanonEOS600D_163066096284_IMG_9966_2_grayscale
 </pre>
 
             <p>Tags belong to the following standards:</p>
