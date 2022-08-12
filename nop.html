@@ -59,7 +59,7 @@
 
             <p>This copy of the Order is set forth in <em>English</em>.</p>
 
-            <p>When specifying the interpretation of the Order, the copy of the Order in <em>Russian</em> is priority.</p>
+            <p>When clarifying the interpretation of the Order, the copy of the Order in <em>Russian</em> is priority.</p>
 
             <p>The Order is originally intended for naming of <em>digital photos</em>, but it approves its use in other appropriate cases.</p>
         </section>
@@ -76,9 +76,9 @@
                 <li>Need for <em>unique</em> photo names for eliminating of threat of loss or damage of photos themselves or information about them because of the same names in the environments of DCSs based on the uniqueness of file names.</li>
                 <li>Need for possibility of <em>restoring</em> of photo name if it is damaged.</li>
                 <li>Need for <em>permanence</em> of photo name to have possibility to use this name anytime for designation of independent subset of data containing photo-related information.</li>
-                <li>Need for <em>informativity</em> of photo name for increasing convenience of human interaction with it.</li>
+                <li>Need for <em>informativity</em> of photo name for increasing the convenience of human interaction with it.</li>
                 <li>Need for <em>compatibility</em> of photo names with various DCSs for portability of photo files between these systems.</li>
-                <li>Need for <em>unified</em> naming Order of individual subsets of photos for ensuring of productivity when shared using and maintaining of them.</li>
+                <li>Need for <em>unified</em> naming order of individual subsets of photos for ensuring of productivity when shared using and maintaining of them.</li>
             </ul>
         </section>
         <section>
@@ -93,7 +93,7 @@
         <section>
             <h2>Solution</h2>
 
-            <p>The Order is based on chronology used in combination with other initial technical photo parameters that are capable of being represented in standard metadata.</p>
+            <p>The Order is based on chronology used in combination with other initial technical and user administrative photo parameters that are capable of being represented in standard metadata.</p>
 
             <p>The Order aims to ensure the uniqueness of photo name on a global scale for any shooting parameters if <em>reliable</em> values of parameters are used for composing of photo name.</p>
 
@@ -101,7 +101,7 @@
 
             <p>The Order is <em>strictly</em> based on the standard metadata tags and sets the <em>mandatory</em> presence of every semantic part of photo name in these metadata tags at least inside the original photo file.</p>
 
-            <p><em>Only</em> values of <em>following initial technical</em> parameters are used:</p>
+            <p>The values of <em>only</em> the following parameters of photo are used:</p>
 
             <ul>
                 <li><strong>date</strong> — YYYYMMDD;</li>
@@ -110,7 +110,8 @@
                 <li><strong>camera model</strong>;</li>
                 <li><strong>camera serial number</strong>;</li>
                 <li><strong>frame designation</strong> — simple designation, for example, original name, or composite designation, for example, composed of intracamera folder number and serial frame number;</li>
-                <li><strong>addition</strong> — simple addition, for example, version, purpose, or composite addition, for example, composed of color space and version. Recommended <em>only</em> for derivative files, if necessary.</li>
+                <li><strong>version</strong> — version of derivative work;</li>
+                <li><strong>addition</strong> — arbitrary addition, for example, purpose or color space. Recommended <em>only</em> for derivative files, if necessary.</li>
             </ul>
 
             <p><em>Only</em> the following symbols are used:</p>
@@ -135,7 +136,7 @@
                 <li>make photo names uniform for different photo subsets, but with distinguishable structure for visual perception.</li>
             </ul>
 
-            <p>At desire, digressions from strict adherence to the Order are permissible under user's personal responsibility.</p>
+            <p>At desire, digressions from strict adherence to the Order are permissible under the user's own responsibility.</p>
 
             <h3>Sample of Naming Scheme</h3>
 
@@ -143,7 +144,7 @@
 DATE_TIME_TIMEZONE_CAMERAMODEL_CAMERASERIALNUMBER_FRAMEDESIGNATION_VERSION_ADDITION.EXTENSION
 </pre>
 
-            <h3>Recommended Metadata Tags for Storing Name Data</h3>
+            <h3>Standard Metadata Tags Recommended for Storing Name Data, with Examples</h3>
 
             <ul>
                 <li>additionally each standard tag is mapped to appropriate <a href="https://exiftool.org" target="_blank" title="ExifTool by Phil Harvey">ExifTool</a>-tag;</li>
@@ -235,7 +236,7 @@ XMP      | Iptc4xmpExt:DigImageGUID        |=>| XMP-iptcExt:DigitalImageGUID
             <p>If necessary, using of other well-known tags is available, for example, for addition in name.</p>
         </section>
         <section>
-            <h2>Examples</h2>
+            <h2>Examples of Naming</h2>
 
             <h3>Naming with Full Compliance with the Order</h3>
 
