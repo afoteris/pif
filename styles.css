@@ -153,10 +153,10 @@ footer {
     text-decoration: none;
 }
 
-body {
+html {
     font-family: 'PT Sans', sans-serif;
     line-height: 1.2;
-    font-size: 18px;
+    font-size: 24px;
 }
 
 a {
@@ -205,12 +205,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Scale = 1.250 (Major Third). */
-h1 { font-size: 2.441em; }
-h2 { font-size: 1.953em; }
-h3 { font-size: 1.563em; }
-h4 { font-size: 1.25em; }
-h5 { font-size: 1em; }
-h6 { font-size: 0.8em; }
+h1 { font-size: 2.441rem; }
+h2 { font-size: 1.953rem; }
+h3 { font-size: 1.563rem; }
+h4 { font-size: 1.25rem; }
+h5 { font-size: 1rem; }
+h6 { font-size: 0.8rem; }
 
 i {
     font-style: italic;
@@ -262,8 +262,11 @@ mark {
     background: transparent;
 }
 
-body {
+html {
     color: #242424;
+}
+
+body {
     background-color: #f2f2f2;
 }
 
